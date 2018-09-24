@@ -1,0 +1,25 @@
+	=====================Payment========================
+
+1-	to calculate the price – system  
+2-	cash payment – user go to  7
+3-	online payment –  (onlinePayment) -- user 
+4-	Go to the bank  port – user
+5-	Validate card data (Validate) – bank 
+6-	wallet money – user
+7-	wallet charge (walletCharger) -- user
+
+	=====================Wallet Charge===================
+
+
+wallet charge
+1-	insert price – (insertPrice) --  user  
+2-	insert bedbit crad – user
+3-	validate card data (Valtidate) -- bank
+4-	charge wallet  note – system 
+
+	=====================Back Money======================
+
+Back Money  
+1-	calculate error price  (backMoneyWallet) – system  
+2-	charge wallet – system
+3-	note to user -- system
