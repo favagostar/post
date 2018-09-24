@@ -2,11 +2,11 @@
 
 1-	Fill the support form (addTicket)- customer/manager
 2-	Validation support form (validationSuportForm) - system
-2- 	Insert ticket (insertedTicket) - system 
-3- 	Display ticket (displayTicket) - system
-4-      validation ticket (validationTicket) - manager
-4- 	Answer to ticket (answerTicket) - customer/manager 
-5-	Validation answer form (validationAnswerForm) - system
-5- 	Insert answer (insertedAnswer) - system
-6- 	Display answer (displayAnswer) - system
-7- 	close ticket (closeTicket)- customer/manager 
+3- 	Insert ticket (insertedTicket) - system 
+4- 	Display ticket (displayTicket) - system
+5-      validation ticket (validationTicket) - manager
+6- 	Answer to ticket (answerTicket) - customer/manager 
+7-	Validation answer form (validationAnswerForm) - system
+8- 	Insert answer (insertedAnswer) - system
+9- 	Display answer (displayAnswer) - system
+10- 	close ticket (closeTicket)- customer/manager 
