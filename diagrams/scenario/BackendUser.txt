@@ -2,7 +2,14 @@
 
 ======== create ========
 
-1- Complete create form (Adduser) - Manager
-2- Verification of information (Correctinfo) - system
-3- send email to create user (Sendemail) - user
-4- Edit information (Update) - user
+1- Complete create form (addUser) - Manager
+2- Validation form (validation) - system
+3- Created form (created) - system
+4- Send email to user (sendEmail) - system
+
+======== update ========
+
+1- Complete form (updateUser) - Manager
+2- Validation form (validation) - system
+3- Updated form (updated) - system
+
