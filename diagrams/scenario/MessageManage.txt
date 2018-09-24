@@ -1,8 +1,8 @@
 
 =-=-=-=-=-=-=-=  Message Manage Senario =-=-=-=-=-=-=--=-=-=
 
-1- Create message (createMessage) - Manager
-2- Validate Form (validateForm) - System
-3- Insert message (insertMessage) - System
-4- Request message (requestDisplayMessage) - User
-5- Display Message (displayMessage) - System
+1- Complete message form (createMessage) - Manager
+2- Validate message form (validateForm) - System
+3- Inserted message (inserted) - System
+4- Request message (displayMessage) - Customer
+5- Displayed Message (displayed) - System
