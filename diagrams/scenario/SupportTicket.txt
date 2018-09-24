@@ -1,0 +1,10 @@
+Support Ticket scenario:
+_____________________________
+
+1- fill the support form- user
+2- insert ticket- system
+3- show ticket to manager- system
+4- answer to ticket- manager
+5- insert answer- system
+6- show answer to user- system
+7- close ticket- user/ manager
