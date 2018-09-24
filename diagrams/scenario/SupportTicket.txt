@@ -4,6 +4,7 @@
 2-	Validation support form (validationSuportForm) - system
 2- 	Insert ticket (insertedTicket) - system 
 3- 	Display ticket (displayTicket) - system
+4-      validation ticket (validationTicket) - manager
 4- 	Answer to ticket (answerTicket) - customer/manager 
 5-	Validation answer form (validationAnswerForm) - system
 5- 	Insert answer (insertedAnswer) - system
