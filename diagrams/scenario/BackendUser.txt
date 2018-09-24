@@ -1,0 +1,8 @@
+=-=-=-=-=-=-=-=  Backend user Senario =-=-=-=-=-=-=--=-=-=
+
+======== create ========
+
+1- Complete create form (Adduser) - Manager
+2- Verification of information (Correctinfo) - system
+3- send email to create user (Sendemail) - user
+4- Edit information (Update) - user
