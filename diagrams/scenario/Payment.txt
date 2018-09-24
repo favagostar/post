@@ -1,6 +1,6 @@
 =====================	Payment Scenario	========================
 
-1-	Calculate the price(calculatePrice) – system  
+1-	price (Service) – system  
 2-	Choose payment type (choosePaymentType) - customer
 3-	Cash payment (cashPayment) - customer
 4-	Paymented (paymented) - system

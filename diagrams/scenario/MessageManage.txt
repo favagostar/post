@@ -4,5 +4,3 @@
 1- Complete message form (createMessage) - Manager
 2- Validate message form (validateForm) - System
 3- Inserted message (inserted) - System
-4- Request message (displayMessage) - Customer
-5- Displayed Message (displayed) - System
