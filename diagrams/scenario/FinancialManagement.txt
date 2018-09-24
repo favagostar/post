@@ -1,0 +1,20 @@
+=====================	Payment Scenario	========================
+
+1-	Calculate the price(calculatePrice) – system  
+2-	Choose payment type (choosePaymentType) - customer
+3-	Cash payment (cashPayment) - customer
+4-	Paymented (paymented) - system
+5-	Choose virtual payment (virtualPayment) - customer
+6-	Go to bank web service (bankWebService) - system
+7-	Validate transaction code (validateTransactionCode) - system
+8-	Paymented (paymented) - system
+9-	Check wallet (checkWallet) - system
+10-	Withdraw money (withdrawMoney) – system
+11-	Paymented (paymented) - system
+12-	Enter price form (walletCharge) - customer
+13-	Validation price form (validationPrice) - system
+14-	Go to bank web service (bankWebService) - system
+15-	Validate transaction code (validateTransactionCode) - system
+16-	Check wallet (checkWallet) - system
+17-	Withdraw money (withdrawMoney) – system
+18-	Paymented (paymented) - system
