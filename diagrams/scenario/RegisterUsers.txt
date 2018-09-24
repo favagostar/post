@@ -5,6 +5,7 @@
 2.Create confirmation code (createCode) - system
 3.Send confirmation code (sendCode) - customer
 4.Verify confirmation code (verifyCode) - system
-5.Complete profile information form (update) - customer
-6.Validation profile information (validation) - system
-7.Updated profile information (updated) - system
+5.Register data in the database (registerd) - system
+6.Complete profile information form (update) - customer
+7.Validation profile information (validation) - system
+8.Updated profile information (updated) - system
