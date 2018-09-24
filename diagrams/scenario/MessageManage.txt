@@ -1,0 +1,7 @@
+
+=-=-=-=-=-=-=-=  Message Manage Senario =-=-=-=-=-=-=--=-=-=
+
+1- Create message (createMessage) - Manager
+2- Insert message (insertMessage) - System
+3- Request message (requestMessage) - User
+4- Request display dessage (requestDisplayMessage) - System
