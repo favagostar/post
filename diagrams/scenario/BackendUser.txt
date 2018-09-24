@@ -1,0 +1,15 @@
+=-=-=-=-=-=-=-=  Backend user Senario =-=-=-=-=-=-=--=-=-=
+
+======== create ========
+
+1- Complete create form (addUser) - Manager
+2- Validation form (validation) - system
+3- Created form (created) - system
+4- Send email to user (sendEmail) - system
+
+======== update ========
+
+1- Complete form (updateUser) - Manager
+2- Validation form (validation) - system
+3- Updated form (updated) - system
+
