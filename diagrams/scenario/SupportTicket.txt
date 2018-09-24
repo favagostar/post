@@ -1,10 +1,11 @@
-Support Ticket scenario:
-_____________________________
+===============	Support Ticket scenario	==================
 
-1- fill the support form- user- (fillForm)
-2- insert ticket- system- (insertTicket)
-3- show ticket to manager- system- (showTicket)
-4- answer to ticket- manager- (answerTicket)
-5- insert answer- system- (insertAnswer)
-6- show answer to user- system- (showAnswer)
-7- close ticket- user/ manager- (closeTicket)
+1-	Fill the support form (addTicket)- customer/manager
+2-	Validation support form (validationSuportForm) - system
+2- 	Insert ticket (insertedTicket) - system 
+3- 	Display ticket (displayTicket) - system
+4- 	Answer to ticket (answerTicket) - customer/manager 
+5-	Validation answer form (validationAnswerForm) - system
+5- 	Insert answer (insertedAnswer) - system
+6- 	Display answer (displayAnswer) - system
+7- 	close ticket (closeTicket)- customer/manager 
