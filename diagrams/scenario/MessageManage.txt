@@ -4,4 +4,4 @@
 1- Create message (createMessage) - Manager
 2- Insert message (insertMessage) - System
 3- Request message (requestDisplayMessage) - User
-4- display Message (displayMessage) - System
+4- Display Message (displayMessage) - System
