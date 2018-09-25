@@ -7,4 +7,5 @@
 5.	Process referrals to postman (referralsToPostman)	- manager	-> 6
 6.	Process package delivery (packageDelivery)		- postman	-> 7
 7.	Procces register in post system (registerInPostSystem)	- operator	-> 8
-8.	Confirm final send package (confirmFinal)		- system	-> End
+8.  Confirm final send package (confirmFinal) - system -> End
+
