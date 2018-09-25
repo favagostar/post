@@ -1,0 +1,8 @@
+======================= Service Scenario ========================
+
+1.	Process service request (requestService)		- customer 	-> 2
+2.	Control customer request (customerRequestControl)	- system	-> [3,End]
+3.	Process referrals to postman (referralsToPostman)	- manager	-> 4
+4.	Process package delivery (packageDelivery)		- postman	-> 5
+5.	Procces register in post system (registerInPostSystem)	- operator	-> 6
+6.	Confirm final send package (confirmFinal)		- system	-> End
