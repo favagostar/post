@@ -1,6 +1,5 @@
 
-=-=-=-=-=-=-=-=  Message Manage Senario =-=-=-=-=-=-=--=-=-=
+=-=-=-=-=-=-=-=  Message Manage Scenario =-=-=-=-=-=-=--=-=-=
 
-1- Complete message form (createMessage) - Manager
-2- Validate message form (validateForm) - System
-3- Inserted message (inserted) - System
+1- Complete message form (createMessage) 	- Manager	-> 2
+2- Inserted message (inserted) 			- System	-> End
