@@ -1,0 +1,17 @@
+
+=-=-=-=-=-=-=-=  Register In Post System Senario =-=-=-=-=-=-=--=-=-=
+
+========  Process Register In Post System ========
+
+1- 	Accept the package  (acceptpackage) 				- Operator	-> [2,3]
+2-	Return process package to customer (returnpackage)	        - Operator 	-> End
+3- 	Complete the form on the post system (completeForm) 		- Operator 	-> 4 
+4- 	Final completion registration on post system (finalCompletion)	- system 	-> End	
+
+
+======== Return Process Package To Customer ========
+
+1- 	Complete the return form  (completeReturnForm) 			- Operator	-> 2
+2-	Wallet process / returns (walletProcessReturns)	                - system 	-> 3
+3- 	Complete the form on the post system (CompleteForm) 		- Operator 	-> 4 
+4- 	Confirm return  (confirmReturn)	          		    	- customer 	-> End		        	

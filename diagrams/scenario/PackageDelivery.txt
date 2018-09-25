@@ -1,0 +1,14 @@
+===============	Package Delivery scenario	==================
+
+1-	Accept work (acceptWork)					- postman	-> 3
+2-	Reject work (rejectWork)					- postman	-> End
+3-	Package control (packageControl)				- postman	-> Package control procces
+4-	Payment (payment)					- postman	-> Payment procces
+5-	Confrim final package delivery (confrimFinal)			- system		-> End
+
+===============	Package control procces	==================
+
+1-	Accept package						- postman	-> 3
+2-	Reject package						- postman	-> End
+3-	Complete customer request form (completeRequestForm)		- postman	-> 4
+4-	Update from (updateFrom)					- system		-> End
