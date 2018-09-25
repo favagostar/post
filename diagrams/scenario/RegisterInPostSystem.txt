@@ -5,7 +5,7 @@
 
 1- 	Accept the package  (acceptpackage) 				- Operator	-> [2,3]
 2-	Return process package to customer (returnpackage)	        - Operator 	-> End
-3- 	Complete the form on the post system (CompleteForm) 		- Operator 	-> 4 
+3- 	Complete the form on the post system (completeForm) 		- Operator 	-> 4 
 4- 	Final completion registration on post system (finalCompletion)	- system 	-> End	
 
 
