@@ -3,8 +3,8 @@
 ________________Charge Wallet________________________________________________
 
 1-	insert price  (insertPrice)			- customer	-> 2
-2-	go bank port  (bank)				- customer	-> 3
-3-	wallet charge (walletCharge)			- system	->  End
+2-	go bank port  (bankService)			- customer	-> 3
+3-	wallet charge (walletCharge)			- system	-> End
 
 
 ________________Withdraw Money _____________________________________________
