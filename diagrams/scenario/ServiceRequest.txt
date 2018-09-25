@@ -1,0 +1,4 @@
+===========================  Service Request Scenario  ===========================
+
+1- 	Complete service request form (completeServiceRequest)	- Customer	-> 2
+2- 	Insert request	(insertRequest)				- System	-> End
