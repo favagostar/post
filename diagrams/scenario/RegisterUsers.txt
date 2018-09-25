@@ -1,10 +1,10 @@
 
 ==================== Register User Scenario ======================
 
-1.	Complete register form (registerSession) - customer 	-> 2
-2.	Create confirmation code (createCode) - system 		-> 3
-3.	Send confirmation code (sendCode) - customer		-> 4
-4.	Control verify confirmation code (verifyCode) - system	-> [3,5]
-5.	Register data in the database (registerd) - system	-> 6
-6.	Complete profile information form (update) - customer	-> 7
-7.	Updated profile information (updated) - system		-> End 
+1.	Complete register form (registerSession) 		- Customer 	-> 2
+2.	Create confirmation code (createCode) 			- System 	-> 3
+3.	Send confirmation code (sendCode) 			- Customer	-> 4
+4.	Control verify confirmation code (verifyCode) 		- System	-> [3,5]
+5.	Register data in the database (registerd) 		- System	-> 6
+6.	Complete profile information form (update) 		- Customer	-> 7
+7.	Updated profile information (updated) 			- System	-> End 
