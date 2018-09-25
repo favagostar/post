@@ -3,17 +3,19 @@
 ======== create ========
 
 1- 	Complete create form (addUser) 		- Manager	-> 2
-2-	Control send email (controlSendEmail)	- system 	-> [3,4]
-3- 	Send email to user (sendEmail) 		- system 	-> 4
-4- 	Created form (created)			- system 	-> End
+2- 	Created form (created)			- system 	-> 3
+3-	Control send email (controlSendEmail)	- system 	-> [4,5]
+4- 	Send email to user (sendEmail) 		- system 	-> End
+5-	Not send email (notSendEmail)		- system	-> End
+
 
 ======== update ========
 
 1- 	Complete form (updateUser)          	- Manager	-> 2
-2-      Updated form (updated)    		- system        -> 3
-3-      Login form (login)                      - system	-> End         
+2-      Updated form (updated)    		- system        -> End
 
 ======== login ========
 
 1- 	Complete login form (login)          	- Manager	-> 2
-2-      Validation login form (validation)      - system	-> End         
+2-      Validation login form (validation)      - system	-> [3,1]        
+3-	Login to system (loginToSystem)		- system	-> End
