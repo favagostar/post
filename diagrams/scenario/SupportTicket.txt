@@ -1,12 +1,10 @@
 ===============	Support Ticket scenario	==================
 
-1-	Fill the support form (addTicket)- customer/manager
-2-	Validation support form (validationSuportForm) - system
-3- 	Insert ticket (insertedTicket) - system 
-4- 	Display ticket (displayTicket) - system
-5-      validation ticket (validationTicket) - manager
-6- 	Answer to ticket (answerTicket) - customer/manager 
-7-	Validation answer form (validationAnswerForm) - system
-8- 	Insert answer (insertedAnswer) - system
-9- 	Display answer (displayAnswer) - system
-10- 	close ticket (closeTicket)- customer/manager 
+1-	Fill the support form (addTicket)	- customer/manager		-> 2
+2-	Insert ticket (insertedTicket)		- system 			-> 3
+3- 	Display ticket (displayTicket)		- system			-> 4
+4-      	Ticket control (validationTicket)	- manager			-> [5,8]
+5- 	Answer to ticket (answerTicket)	- customer/manager 	-> 6
+6- 	Insert answer (insertedAnswer)	- system			-> 7
+7- 	Display answer (displayAnswer)	- system			-> 8
+8- 	Close ticket (closeTicket)		- customer/manager		-> End
