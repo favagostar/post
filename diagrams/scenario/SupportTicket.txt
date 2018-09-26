@@ -1,10 +1,21 @@
-===============	Support Ticket scenario	==================
+===============	Support Ticket Customer scenario	==================
 
-1-	Fill the support form (addTicket)	- customer/manager		-> 2
-2-	Insert ticket (insertedTicket)		- system 			-> 3
-3- 	Display ticket (displayTicket)		- system			-> 4
-4-      	Ticket control (validationTicket)	- manager			-> [5,8]
-5- 	Answer to ticket (answerTicket)	- customer/manager 	-> 6
-6- 	Insert answer (insertedAnswer)	- system			-> 7
-7- 	Display answer (displayAnswer)	- system			-> 8
-8- 	Close ticket (closeTicket)		- customer/manager		-> End
+1-	Fill the support form (addTicket)	- customer		-> 2
+2-	Insert ticket (insertedTicket)		- system 		-> 3
+3-      Control accept ticket(acceptTicket)	- manager		-> [4,5]
+4- 	Process close ticket (closeTicket)	- manager		-> End
+5- 	Answer to ticket (answerTicket)		- manager		-> 6
+6- 	Insert answer (insertedAnswer)		- system		-> End
+
+
+===============	Support Ticket Manager scenario	==================
+
+1-	Fill the support form (addTicket)	- manager	-> 2
+2-	Insert ticket (insertedTicket)		- system 	-> 3
+3- 	Answer to ticket (answerTicket)		- customer 	-> 4
+4- 	Insert answer (insertedAnswer)		- system	-> End
+
+===============	Process close ticket scenario	==================
+
+1-	Complete close form (closeTicket)	- cutomer/manager	-> 2
+2-	Close ticket (closed)			- system 		-> End

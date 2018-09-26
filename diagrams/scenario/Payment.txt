@@ -1,6 +1,6 @@
 =====================	Payment Scenario	========================
   
-1-	Choose payment type (choosePaymentType) 	- customer  			-> [2,3]
-2-	Wallet						- customer			-> 3
-4-	Paymented (paymented) - system			- [external operator, system] 	-> End
+1-	Choose payment type (choosePaymentType) 	- customer  		-> [2,3]
+2-	Wallet process (walletProcess)			- customer		-> 3
+3-	Paymented (paymented)				- postman/system 	-> End
 

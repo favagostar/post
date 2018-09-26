@@ -1,4 +1,4 @@
 ===========================  Referrals to Postman Scenario  ===========================
 
 1-	Choose postman (choosePostman)			- Manager	-> 2
-2	Insert referrals to postman(insertReferrals)	- System 	-> End
+2	Submit referrals to postman(submitReferrals)	- System 	-> End

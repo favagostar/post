@@ -1,20 +1,20 @@
  =-=-=-=-=-=-==-=-=-=-=-=-==-=-=-=-=-=-= Wallet =-=-=-=-=-=-==-=-=-=-=-=-==-=-=-=-=-=-=
 
-________________Charge Wallet________________________________________________
+________________ Wallet Charge ________________________________________________
 
 1-	insert price  (insertPrice)			- customer	-> 2
 2-	go bank port  (bankService)			- customer	-> 3
 3-	wallet charge (walletCharge)			- system	-> End
 
 
-________________Withdraw Money _____________________________________________
+________________ Wallet Withdraw _____________________________________________
 
-1-	Determine the amount (determineAmount)		- customer	-> 2
-2-	Control Amount (controlMoney)			- system	-> [3,4]
+1-	Request withdraw (requestWithdraw)		- customer	-> 2
+2-	Check wallet (checkWallet)			- system	-> [3,4]
 3-	Withdraw Money (withdrawMoney)			- system	-> End
-4-	walletCharge()					- customer	-> 2
+4-	Process Wallet Charge (walletCharge)		- customer	-> 2
 
-________________Return Money _______________________________________________
+________________ Wallet Return _______________________________________________
 1-	return money to wallet (returnMoney) 		- system	-> End
 
 
