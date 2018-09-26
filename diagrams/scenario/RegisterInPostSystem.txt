@@ -4,7 +4,7 @@
 ========  Process Register In Post System ========
 
 1- 	Control accept the package  (acceptPackage) 			- Operator		-> [2,3]
-2-	Process return package to customer (returnPackage)	        - Operator 		-> 4
+2-	Process return package to customer (returnPackage)	        - Operator 		-> End
 3- 	Complete the form on the post system (completeForm) 		- Operator 		-> 4 
 4- 	Final completion registration on post system (finalCompletion)	- system 		-> End	
 
