@@ -1,0 +1,15 @@
+title: 'تست ها'
+modelClass: Sepehr\Test\Models\Test
+list: $/sepehr/test/models/test/columns.yaml
+recordUrl: 'sepehr/test/tests/update/:id'
+noRecordsMessage: 'backend::lang.list.no_records'
+recordsPerPage: 20
+showSetup: true
+showCheckboxes: true
+defaultSort:
+    column: created_at
+    direction: desc
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: جستجو...

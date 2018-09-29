@@ -1,0 +1,10 @@
+fields:
+    name:
+        label: عنوان
+        span: auto
+        type: text
+    description:
+        label: توضیحات
+        size: small
+        span: full
+        type: textarea

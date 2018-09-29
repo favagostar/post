@@ -1,0 +1,10 @@
+name: Users
+form: $/sepehr/test/models/user/fields.yaml
+modelClass: Sepehr\Test\Models\User
+defaultRedirect: sepehr/test/users
+create:
+    redirect: 'sepehr/test/users/update/:id'
+    redirectClose: sepehr/test/users
+update:
+    redirect: sepehr/test/users
+    redirectClose: sepehr/test/users

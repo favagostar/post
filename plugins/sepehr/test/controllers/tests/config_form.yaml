@@ -1,0 +1,17 @@
+name: 'لیست ها'
+modelClass: Sepehr\Test\Models\Test
+form: $/sepehr/test/models/test/fields.yaml
+defaultRedirect: sepehr/test/tests
+create:
+    title: 'ایجاد تست'
+    redirect: 'sepehr/test/tests/update/:id'
+    redirectClose: sepehr/test/tests
+    flashSave: 'تست با موفقیت ایجاد شد.'
+update:
+    title: 'ویرایش تست'
+    redirect: sepehr/test/tests
+    redirectClose: sepehr/test/tests
+    flashSave: 'تست با موفقیت ویرایش شد.'
+    flashDelete: 'تست با موفقیت حذف شد.'
+preview:
+    title: 'پیش نمایش تست'
