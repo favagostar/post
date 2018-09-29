@@ -1,0 +1,6 @@
+plugin:
+    name: 'اطلاعات پایه'
+    description: 'sepehr.details::lang.plugin.description'
+    author: sepehr
+    icon: oc-icon-database
+    homepage: ''
