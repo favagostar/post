@@ -1,0 +1,10 @@
+/bootstrap
+/config
+/modules
+/storage
+/themes
+/vendor
+.htaccess
+artisan
+index.php
+post.sql
