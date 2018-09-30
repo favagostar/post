@@ -3,3 +3,9 @@
 1.0.2:
     - 'Created table sepehr_details_sex'
     - builder_table_create_sepehr_details_sex.php
+1.0.3:
+    - 'Created table sepehr_details_payment_type'
+    - builder_table_create_sepehr_details_payment_type.php
+1.0.4:
+    - 'Created table sepehr_details_distribution_time'
+    - builder_table_create_sepehr_details_distribution_time.php

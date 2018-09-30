@@ -1,0 +1,12 @@
+list: $/sepehr/details/models/distributiontime/columns.yaml
+modelClass: Sepehr\Details\Models\DistributionTime
+title: DistributionTimes
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'sepehr/details/distributiontimes/update/:id'
