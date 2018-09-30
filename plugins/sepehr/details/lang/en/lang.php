@@ -1,6 +1,6 @@
 <?php return [
     'plugin' => [
-        'name' => 'details',
-        'description' => 'این افزونه برای اطلاعات پایه می باشد'
+        'name' => 'اطلاعات پایه',
+        'description' => 'افزونه اطلاعات پایه سیستم'
     ]
 ];

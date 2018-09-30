@@ -19,6 +19,12 @@ class Sex extends Model
      * @var array Validation rules
      */
     public $rules = [
+        "name" => 'required|max:10'
+    ];
+
+    public $customMessages = [
+        "name.required" => 'لطفا عنوان را وارد کنید.',
+        "name.max" => 'عنوان نباید بیشتر از 10 کاراکتر باشد.'
     ];
 
     /**
