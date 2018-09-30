@@ -1,0 +1,13 @@
+name: جنسیت
+modelClass: Sepehr\Ahmadi\Models\Sex
+form: $/sepehr/ahmadi/models/sex/fields.yaml
+defaultRedirect: sepehr/ahmadi/sex
+create:
+    title: 'ایجاد جنسیت'
+    redirect: 'sepehr/ahmadi/sex/update/:id'
+    redirectClose: sepehr/ahmadi/sex
+update:
+    title: 'ویرایش جنسیت÷'
+    redirect: sepehr/ahmadi/sex
+    redirectClose: sepehr/ahmadi/sex
+preview: {  }

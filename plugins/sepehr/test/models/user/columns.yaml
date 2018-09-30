@@ -1,0 +1,36 @@
+columns:
+    id:
+        label: مشخصه
+        type: text
+        searchable: true
+        sortable: false
+    name:
+        label: عنوان
+        type: text
+        searchable: true
+        sortable: true
+    description:
+        label: توضیحات
+        type: text
+        searchable: true
+        sortable: false
+    created_at:
+        label: 'تاریخ ایجاد'
+        type: datetime
+        sortable: true
+        format: 'l d F Y'
+    updated_at:
+        label: 'تاریخ آپدیت'
+        type: datetime
+        invisible: true
+        sortable: true
+    deleted_at:
+        label: 'تاریخ حذف'
+        type: datetime
+        invisible: true
+        sortable: true
+    test_date:
+        label: 'تاریخ شروع'
+        type: datetime
+        sortable: true
+        format: Y/m/d

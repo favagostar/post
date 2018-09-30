@@ -1,0 +1,23 @@
+columns:
+    id:
+        label: مشخصه
+        type: number
+        searchable: true
+    name:
+        label: عنوان
+        type: text
+        searchable: true
+    description:
+        label: توضیحات
+        type: text
+        searchable: true
+    created_at:
+        label: 'تاریخ ایجاد'
+        type: date
+        invisible: false
+        format: 'Y/m/d - H:i'
+    updated_at:
+        label: 'تاریخ آپدیت'
+        type: datetime
+        invisible: true
+        format: 'Y/m/d - H:i'

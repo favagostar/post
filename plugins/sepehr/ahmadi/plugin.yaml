@@ -1,0 +1,6 @@
+plugin:
+    name: 'sepehr.ahmadi::lang.plugin.name'
+    description: 'sepehr.ahmadi::lang.plugin.description'
+    author: sepehr
+    icon: oc-icon-database
+    homepage: ''
