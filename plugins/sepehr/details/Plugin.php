@@ -20,12 +20,12 @@ class Plugin extends PluginBase
 	{
 		return [
 			"sepehr.details.access_sex" => [
-				"tab" => 'اطلاعات پایه',
+				"tab" 	=> 'اطلاعات پایه',
 				"label" => 'مدیریت جنسیت ها',
 				"order" => 1
 			],
 			"sepehr.details.access_payment_type" => [
-				"tab" => 'اطلاعات پایه',
+				"tab" 	=> 'اطلاعات پایه',
 				"label" => 'مدیریت انواع پرداخت',
 				"order" => 2
 			],
@@ -57,7 +57,6 @@ class Plugin extends PluginBase
 		                'permissions' 	=> ['sepehr.details.access_payment_type']
                 	]
                 ]
-
 			]
 		];
 	}
