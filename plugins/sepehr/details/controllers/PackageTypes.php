@@ -18,6 +18,6 @@ class PackageTypes extends Controller
   public function __construct()
   {
     parent::__construct();
-    BackendMenu::setContext('Sepehr.Details', 'details', 'packageType');
+    BackendMenu::setContext('Sepehr.Details', 'details', 'packageTypes');
   }
 }

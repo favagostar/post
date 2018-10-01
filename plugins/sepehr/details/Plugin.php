@@ -46,7 +46,7 @@ class Plugin extends PluginBase
       ],
       "sepehr.details.access_distribution_time" => [
         "tab" 	=> 'اطلاعات پایه',
-        "label" => 'مدیریت انواع سرویس ویژه',
+        "label" => 'مدیریت انواع زمان توزیع',
         "order" => 6
       ],
 

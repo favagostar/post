@@ -1,12 +1,12 @@
 columns:
     id:
-        label: شناسه
+        label: کد
         type: text
         searchable: true
         sortable: true
         width: 5%
     name:
-        label: 'نوع پست'
+        label: عنوان
         type: text
         searchable: true
         sortable: true
