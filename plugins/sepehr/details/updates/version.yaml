@@ -1,0 +1,11 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table sepehr_details_sex'
+    - builder_table_create_sepehr_details_sex.php
+1.0.3:
+    - 'Created table sepehr_details_package_type'
+    - builder_table_create_sepehr_details_package_type.php
+1.0.4:
+    - 'Created table sepehr_details_special_service'
+    - builder_table_create_sepehr_details_special_service.php
