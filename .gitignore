@@ -7,7 +7,6 @@
 .htaccess
 artisan
 index.php
-post.sql
 /plugins/flynsarmy
 .phpstorm.meta.php
 _ide_helper.php

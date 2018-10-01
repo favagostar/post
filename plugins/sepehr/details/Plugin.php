@@ -33,24 +33,24 @@ class Plugin extends PluginBase
   				"order" => 1
   			],
 
-      //post
-        "sepehr.details.post.access_package_type" => [
-          "tab" 	=> 'اطلاعات پایه بسته های پستی',
+      //service
+        "sepehr.details.service.access_package_type" => [
+          "tab" 	=> 'اطلاعات پایه سرویس پست',
           "label" => 'مدیریت انواع بسته ها',
           "order" => 1
         ],
-        "sepehr.details.post.access_special_service" => [
-          "tab"   => 'اطلاعات پایه بسته های پستی',
+        "sepehr.details.service.access_special_service" => [
+          "tab"   => 'اطلاعات پایه سرویس پست',
           "label" => 'مدیریت انواع سرویس ویژه',
           "order" => 2
         ],
-        "sepehr.details.post.access_post_type" => [
-          "tab"   => 'اطلاعات پایه بسته های پستی',
+        "sepehr.details.service.access_post_type" => [
+          "tab"   => 'اطلاعات پایه سرویس پست',
           "label" => 'مدیریت انواع سرویس پست',
           "order" => 3
         ],
-        "sepehr.details.post.access_distribution_time" => [
-          "tab"   => 'اطلاعات پایه بسته های پستی',
+        "sepehr.details.service.access_distribution_time" => [
+          "tab"   => 'اطلاعات پایه سرویس پست',
           "label" => 'مدیریت انواع زمان توزیع',
           "order" => 4
         ],
