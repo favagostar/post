@@ -4,6 +4,7 @@ columns:
         type: text
         searchable: true
         sortable: true
+        width: 5%
     name:
         label: عنوان
         type: text
