@@ -32,12 +32,12 @@ class Plugin extends PluginBase
       "sepehr.details.access_package_type" => [
         "tab" 	=> 'اطلاعات پایه',
         "label" => 'مدیریت انواع بسته ها',
-        "order" => 2
+        "order" => 3
       ],
       "sepehr.details.access_special_service" => [
         "tab" 	=> 'اطلاعات پایه',
         "label" => 'مدیریت انواع سرویس ویژه',
-        "order" => 2
+        "order" => 4
       ],
 
 		];
@@ -62,7 +62,7 @@ class Plugin extends PluginBase
                 	],
                 	"paymentType" => [
                 		'label' 		    => 'انواع پرداخت',
-		                'url'   		    => Backend::url('sepehr/details/sex'),
+		                'url'   		    => Backend::url('sepehr/details/paymenttypes'),
 		                'icon'  	  	  => 'icon-credit-card',
 		                'permissions' 	=> ['sepehr.details.access_payment_type']
                 	],
