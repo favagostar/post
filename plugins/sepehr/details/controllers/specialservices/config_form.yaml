@@ -13,4 +13,5 @@ update:
     redirectClose: sepehr/details/specialservices
     flashSave: 'سرویس ویژه با موفقیت ویرایش شد'
     flashDelete: 'سرویس ویژه با موفقیت حذف شد'
-preview: {  }
+preview:
+    title: 'پیش نمایش سرویس های ویژه'
