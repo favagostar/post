@@ -1,0 +1,8 @@
+columns:
+    id:
+        label: ردیف
+        type: text
+        width: 5%
+    name:
+        label: عنوان
+        type: text
