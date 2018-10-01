@@ -1,0 +1,12 @@
+columns:
+    id:
+        label: شناسه
+        type: text
+        searchable: true
+        sortable: true
+        width: 5%
+    name:
+        label: 'نوع پست'
+        type: text
+        searchable: true
+        sortable: true

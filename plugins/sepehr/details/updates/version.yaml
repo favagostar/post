@@ -14,3 +14,6 @@
     - builder_table_create_sepehr_details_package_type.php
     - 'Created table sepehr_details_special_service'
     - builder_table_create_sepehr_details_special_service.php
+1.0.6:
+    - 'Created table sepehr_details_post_type'
+    - builder_table_create_sepehr_details_post_type.php
