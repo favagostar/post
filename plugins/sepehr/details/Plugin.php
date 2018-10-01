@@ -32,12 +32,22 @@ class Plugin extends PluginBase
       "sepehr.details.access_package_type" => [
         "tab" 	=> 'اطلاعات پایه',
         "label" => 'مدیریت انواع بسته ها',
-        "order" => 2
+        "order" => 3
       ],
       "sepehr.details.access_special_service" => [
         "tab" 	=> 'اطلاعات پایه',
         "label" => 'مدیریت انواع سرویس ویژه',
-        "order" => 2
+        "order" => 4
+      ],
+      "sepehr.details.access_post_type" => [
+        "tab" 	=> 'اطلاعات پایه',
+        "label" => 'مدیریت انواع سرویس پست',
+        "order" => 5
+      ],
+      "sepehr.details.access_distribution_time" => [
+        "tab" 	=> 'اطلاعات پایه',
+        "label" => 'مدیریت انواع سرویس ویژه',
+        "order" => 6
       ],
 
 		];
@@ -60,13 +70,13 @@ class Plugin extends PluginBase
 		                'icon'  	  	  => 'icon-male',
 		                'permissions' 	=> ['sepehr.details.access_sex']
                 	],
-                	"paymentType" => [
+                	"paymentTypes" => [
                 		'label' 		    => 'انواع پرداخت',
-		                'url'   		    => Backend::url('sepehr/details/sex'),
+		                'url'   		    => Backend::url('sepehr/details/paymenttypes'),
 		                'icon'  	  	  => 'icon-credit-card',
 		                'permissions' 	=> ['sepehr.details.access_payment_type']
                 	],
-                  "specialService" => [
+                  "specialServices" => [
                     'label' 		    => 'سرویس های ویژه ',
                     'url'   		    => Backend::url('sepehr/details/specialservices'),
                     'icon'  	  	  => 'icon-diamond',
@@ -77,6 +87,18 @@ class Plugin extends PluginBase
                     'url'   		    => Backend::url('sepehr/details/packagetypes'),
                     'icon'  	  	  => 'icon-envelope-o',
                     'permissions' 	=> ['sepehr.details.access_package_type']
+                  ],
+                  "postTypes" => [
+                    'label' 		    => 'انواع پست ',
+                    'url'   		    => Backend::url('sepehr/details/posttypes'),
+                    'icon'  	  	  => 'icon-envelope',
+                    'permissions' 	=> ['sepehr.details.access_package_type']
+                  ],
+                  "distributionTimes" => [
+                    'label' 		    => 'انواع زمان توزیع ',
+                    'url'   		    => Backend::url('sepehr/details/distributiontimes'),
+                    'icon'  	  	  => 'icon-clock-o',
+                    'permissions' 	=> ['sepehr.details.access_distribution_time']
                   ],
                 ]
 			]
