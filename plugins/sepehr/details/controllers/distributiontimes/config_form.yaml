@@ -1,0 +1,10 @@
+name: DistributionTimes
+form: $/sepehr/details/models/distributiontime/fields.yaml
+modelClass: Sepehr\Details\Models\DistributionTime
+defaultRedirect: sepehr/details/distributiontimes
+create:
+    redirect: 'sepehr/details/distributiontimes/update/:id'
+    redirectClose: sepehr/details/distributiontimes
+update:
+    redirect: sepehr/details/distributiontimes
+    redirectClose: sepehr/details/distributiontimes
