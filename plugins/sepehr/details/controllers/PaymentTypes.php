@@ -5,12 +5,15 @@ use BackendMenu;
 
 class PaymentTypes extends Controller
 {
-    public $implement = [        'Backend\Behaviors\ListController',        'Backend\Behaviors\FormController'    ];
+    public $implement = [
+      'Backend\Behaviors\ListController',
+      'Backend\Behaviors\FormController'
+    ];
     
     public $listConfig = 'config_list.yaml';
     public $formConfig = 'config_form.yaml';
 
-    public $requiredPermissions = ['sepehr.details.access_paymentTypes'];
+    public $requiredPermissions = ['sepehr.details.access_payment_types'];
 
     public function __construct()
     {

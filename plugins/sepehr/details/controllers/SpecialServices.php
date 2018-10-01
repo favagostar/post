@@ -5,12 +5,15 @@ use BackendMenu;
 
 class SpecialServices extends Controller
 {
-  public $implement = ['Backend\Behaviors\ListController', 'Backend\Behaviors\FormController'];
+  public $implement = [
+    'Backend\Behaviors\ListController',
+    'Backend\Behaviors\FormController'
+  ];
 
   public $listConfig = 'config_list.yaml';
   public $formConfig = 'config_form.yaml';
 
-  public $requiredPermissions = ['sepehr.details.special_service'];
+  public $requiredPermissions = ['sepehr.details.access_special_service'];
 
 
   public function __construct()

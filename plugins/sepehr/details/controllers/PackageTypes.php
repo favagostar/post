@@ -5,12 +5,15 @@ use BackendMenu;
 
 class PackageTypes extends Controller
 {
-  public $implement = ['Backend\Behaviors\ListController', 'Backend\Behaviors\FormController'];
+  public $implement = [
+    'Backend\Behaviors\ListController',
+    'Backend\Behaviors\FormController'
+  ];
 
   public $listConfig = 'config_list.yaml';
   public $formConfig = 'config_form.yaml';
 
-  public $requiredPermissions = ['sepehr.details.package_type'];
+  public $requiredPermissions = ['sepehr.details.access_package_type'];
 
   public function __construct()
   {
