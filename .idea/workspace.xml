@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4a3b45dd-757b-48fa-9391-33512bb6e8d4" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/diagrams/use case/BackendUser.EAP" beforeDir="false" afterPath="$PROJECT_DIR$/diagrams/use case/BackendUser.EAP" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diagrams/use case/PackageDelivery.EAP" beforeDir="false" afterPath="$PROJECT_DIR$/diagrams/use case/PackageDelivery.EAP" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/LICENCE.md" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/LICENCE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/Plugin.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/Plugin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/assets/css/builder.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/assets/css/builder.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/assets/images/builder-icon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/assets/images/builder-icon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/assets/js/build-min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/assets/js/build-min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/assets/js/build.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/assets/js/build.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/assets/js/builder.dataregistry.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/assets/js/builder.dataregistry.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/assets/js/builder.index.entity.base.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/assets/js/builder.index.entity.base.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/assets/js/builder.index.entity.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/assets/js/builder.index.entity.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/assets/js/builder.index.entity.databasetable.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/assets/js/builder.index.entity.databasetable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/assets/js/builder.index.entity.localization.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/assets/js/builder.index.entity.localization.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/assets/js/builder.index.entity.menus.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/assets/js/builder.index.entity.menus.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/assets/js/builder.index.entity.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/assets/js/builder.index.entity.model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/assets/js/builder.index.entity.modelform.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/assets/js/builder.index.entity.modelform.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/assets/js/builder.index.entity.modellist.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/assets/js/builder.index.entity.modellist.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/assets/js/builder.index.entity.permission.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/assets/js/builder.index.entity.permission.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/assets/js/builder.index.entity.plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/assets/js/builder.index.entity.plugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/assets/js/builder.index.entity.version.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/assets/js/builder.index.entity.version.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/assets/js/builder.index.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/assets/js/builder.index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/assets/js/builder.inspector.editor.localization.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/assets/js/builder.inspector.editor.localization.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/assets/js/builder.localizationinput.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/assets/js/builder.localizationinput.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/assets/js/builder.table.processor.localization.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/assets/js/builder.table.processor.localization.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/assets/less/behaviors.less" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/assets/less/behaviors.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/assets/less/builder.less" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/assets/less/builder.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/assets/less/buildingarea.less" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/assets/less/buildingarea.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/assets/less/controlblueprint.less" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/assets/less/controlblueprint.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/assets/less/localization.less" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/assets/less/localization.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/assets/less/menus.less" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/assets/less/menus.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/assets/less/tabs.less" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/assets/less/tabs.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/behaviors/IndexControllerOperations.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/behaviors/IndexControllerOperations.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/behaviors/IndexDataRegistry.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/behaviors/IndexDataRegistry.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/behaviors/IndexDatabaseTableOperations.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/behaviors/IndexDatabaseTableOperations.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/behaviors/IndexLocalizationOperations.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/behaviors/IndexLocalizationOperations.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/behaviors/IndexMenusOperations.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/behaviors/IndexMenusOperations.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/behaviors/IndexModelFormOperations.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/behaviors/IndexModelFormOperations.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/behaviors/IndexModelListOperations.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/behaviors/IndexModelListOperations.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/behaviors/IndexModelOperations.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/behaviors/IndexModelOperations.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/behaviors/IndexPermissionsOperations.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/behaviors/IndexPermissionsOperations.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/behaviors/IndexPluginOperations.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/behaviors/IndexPluginOperations.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/behaviors/IndexVersionsOperations.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/behaviors/IndexVersionsOperations.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/behaviors/indexcontrolleroperations/partials/_create-controller-popup-form.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/behaviors/indexcontrolleroperations/partials/_create-controller-popup-form.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/behaviors/indexcontrolleroperations/partials/_tab.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/behaviors/indexcontrolleroperations/partials/_tab.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/behaviors/indexcontrolleroperations/partials/_toolbar.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/behaviors/indexcontrolleroperations/partials/_toolbar.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/behaviors/indexdatabasetableoperations/partials/_migration-popup-form.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/behaviors/indexdatabasetableoperations/partials/_migration-popup-form.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/behaviors/indexdatabasetableoperations/partials/_tab.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/behaviors/indexdatabasetableoperations/partials/_tab.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/behaviors/indexdatabasetableoperations/partials/_toolbar.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/behaviors/indexdatabasetableoperations/partials/_toolbar.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/behaviors/indexlocalizationoperations/partials/_copy-strings-popup-form.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/behaviors/indexlocalizationoperations/partials/_copy-strings-popup-form.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/behaviors/indexlocalizationoperations/partials/_new-string-popup.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/behaviors/indexlocalizationoperations/partials/_new-string-popup.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/behaviors/indexlocalizationoperations/partials/_tab.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/behaviors/indexlocalizationoperations/partials/_tab.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/behaviors/indexlocalizationoperations/partials/_toolbar.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/behaviors/indexlocalizationoperations/partials/_toolbar.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/behaviors/indexmenusoperations/partials/_tab.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/behaviors/indexmenusoperations/partials/_tab.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/behaviors/indexmenusoperations/partials/_toolbar.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/behaviors/indexmenusoperations/partials/_toolbar.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/behaviors/indexmodelformoperations/partials/_tab.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/behaviors/indexmodelformoperations/partials/_tab.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/behaviors/indexmodelformoperations/partials/_toolbar.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/behaviors/indexmodelformoperations/partials/_toolbar.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/behaviors/indexmodellistoperations/partials/_tab.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/behaviors/indexmodellistoperations/partials/_tab.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/behaviors/indexmodellistoperations/partials/_toolbar.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/behaviors/indexmodellistoperations/partials/_toolbar.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/behaviors/indexmodeloperations/partials/_model-popup-form.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/behaviors/indexmodeloperations/partials/_model-popup-form.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/behaviors/indexpermissionsoperations/partials/_tab.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/behaviors/indexpermissionsoperations/partials/_tab.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/behaviors/indexpermissionsoperations/partials/_toolbar.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/behaviors/indexpermissionsoperations/partials/_toolbar.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/behaviors/indexpluginoperations/partials/_plugin-popup-form.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/behaviors/indexpluginoperations/partials/_plugin-popup-form.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/behaviors/indexversionsoperations/partials/_tab.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/behaviors/indexversionsoperations/partials/_tab.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/behaviors/indexversionsoperations/partials/_toolbar.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/behaviors/indexversionsoperations/partials/_toolbar.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/behaviors/indexversionsoperations/partials/_version-hint-block.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/behaviors/indexversionsoperations/partials/_version-hint-block.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/classes/BaseModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/classes/BaseModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/classes/BehaviorDesignTimeProviderBase.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/classes/BehaviorDesignTimeProviderBase.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/classes/ComponentHelper.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/classes/ComponentHelper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/classes/ControlDesignTimeProviderBase.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/classes/ControlDesignTimeProviderBase.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/classes/ControlLibrary.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/classes/ControlLibrary.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/classes/ControllerBehaviorLibrary.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/classes/ControllerBehaviorLibrary.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/classes/ControllerFileParser.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/classes/ControllerFileParser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/classes/ControllerGenerator.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/classes/ControllerGenerator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/classes/ControllerModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/classes/ControllerModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/classes/DatabaseTableModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/classes/DatabaseTableModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/classes/DatabaseTableSchemaCreator.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/classes/DatabaseTableSchemaCreator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/classes/EnumDbType.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/classes/EnumDbType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/classes/FilesystemGenerator.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/classes/FilesystemGenerator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/classes/IconList.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/classes/IconList.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/classes/IndexOperationsBehaviorBase.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/classes/IndexOperationsBehaviorBase.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/classes/LanguageMixer.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/classes/LanguageMixer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/classes/LocalizationModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/classes/LocalizationModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/classes/MenusModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/classes/MenusModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/classes/MigrationColumnType.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/classes/MigrationColumnType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/classes/MigrationFileParser.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/classes/MigrationFileParser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/classes/MigrationModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/classes/MigrationModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/classes/ModelFileParser.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/classes/ModelFileParser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/classes/ModelFormModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/classes/ModelFormModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/classes/ModelListModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/classes/ModelListModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/classes/ModelModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/classes/ModelModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/classes/ModelYamlModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/classes/ModelYamlModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/classes/PermissionsModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/classes/PermissionsModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/classes/PhpSourceStream.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/classes/PhpSourceStream.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/classes/PluginBaseModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/classes/PluginBaseModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/classes/PluginCode.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/classes/PluginCode.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/classes/PluginVector.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/classes/PluginVector.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/classes/PluginVersion.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/classes/PluginVersion.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/classes/PluginYamlModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/classes/PluginYamlModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/classes/StandardBehaviorsRegistry.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/classes/StandardBehaviorsRegistry.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/classes/StandardControlsRegistry.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/classes/StandardControlsRegistry.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/classes/TableMigrationCodeGenerator.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/classes/TableMigrationCodeGenerator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/classes/YamlModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/classes/YamlModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/classes/controllergenerator/templates/controller-config-vars.php.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/classes/controllergenerator/templates/controller-config-vars.php.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/classes/controllergenerator/templates/controller-permissions.php.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/classes/controllergenerator/templates/controller-permissions.php.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/classes/controllergenerator/templates/controller.php.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/classes/controllergenerator/templates/controller.php.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/classes/controllermodel/fields.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/classes/controllermodel/fields.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/classes/controllermodel/new-controller-fields.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/classes/controllermodel/new-controller-fields.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/classes/databasetablemodel/fields.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/classes/databasetablemodel/fields.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/classes/databasetablemodel/templates/full-migration-code.php.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/classes/databasetablemodel/templates/full-migration-code.php.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/classes/databasetablemodel/templates/migration-code.php.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/classes/databasetablemodel/templates/migration-code.php.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/classes/localizationmodel/fields.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/classes/localizationmodel/fields.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/classes/localizationmodel/templates/lang.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/classes/localizationmodel/templates/lang.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/classes/menusmodel/fields.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/classes/menusmodel/fields.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/classes/migrationmodel/fields.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/classes/migrationmodel/fields.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/classes/migrationmodel/management-fields.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/classes/migrationmodel/management-fields.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/classes/migrationmodel/templates/migration.php.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/classes/migrationmodel/templates/migration.php.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/classes/migrationmodel/templates/seeder.php.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/classes/migrationmodel/templates/seeder.php.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/classes/modelformmodel/fields.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/classes/modelformmodel/fields.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/classes/modellistmodel/fields.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/classes/modellistmodel/fields.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/classes/modelmodel/fields.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/classes/modelmodel/fields.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/classes/modelmodel/templates/model.php.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/classes/modelmodel/templates/model.php.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/classes/modelmodel/templates/no-timestamps.php.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/classes/modelmodel/templates/no-timestamps.php.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/classes/modelmodel/templates/soft-delete.php.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/classes/modelmodel/templates/soft-delete.php.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/classes/permissionsmodel/fields.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/classes/permissionsmodel/fields.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/classes/pluginbasemodel/fields.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/classes/pluginbasemodel/fields.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/classes/pluginbasemodel/templates/lang.php.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/classes/pluginbasemodel/templates/lang.php.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/classes/pluginbasemodel/templates/plugin.php.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/classes/pluginbasemodel/templates/plugin.php.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/classes/pluginbasemodel/templates/version.yaml.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/classes/pluginbasemodel/templates/version.yaml.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/classes/standardbehaviorsregistry/formcontroller/templates/create.htm.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/classes/standardbehaviorsregistry/formcontroller/templates/create.htm.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/classes/standardbehaviorsregistry/formcontroller/templates/preview.htm.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/classes/standardbehaviorsregistry/formcontroller/templates/preview.htm.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/classes/standardbehaviorsregistry/formcontroller/templates/update.htm.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/classes/standardbehaviorsregistry/formcontroller/templates/update.htm.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/classes/standardbehaviorsregistry/listcontroller/templates/_list_toolbar.htm.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/classes/standardbehaviorsregistry/listcontroller/templates/_list_toolbar.htm.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/classes/standardbehaviorsregistry/listcontroller/templates/index.htm.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/classes/standardbehaviorsregistry/listcontroller/templates/index.htm.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/classes/standardbehaviorsregistry/reordercontroller/templates/_reorder_toolbar.htm.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/classes/standardbehaviorsregistry/reordercontroller/templates/_reorder_toolbar.htm.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/classes/standardbehaviorsregistry/reordercontroller/templates/reorder.htm.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/classes/standardbehaviorsregistry/reordercontroller/templates/reorder.htm.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/components/RecordDetails.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/components/RecordDetails.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/components/RecordList.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/components/RecordList.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/components/recorddetails/default.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/components/recorddetails/default.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/components/recordlist/default.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/components/recordlist/default.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/controllers/index/_plugin-selector.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/controllers/index/_plugin-selector.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/controllers/index/_sidepanel.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/controllers/index/_sidepanel.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/controllers/index/index.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/controllers/index/index.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/formwidgets/ControllerBuilder.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/formwidgets/ControllerBuilder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/formwidgets/FormBuilder.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/formwidgets/FormBuilder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/formwidgets/MenuEditor.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/formwidgets/MenuEditor.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/formwidgets/controllerbuilder/partials/_behavior.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/formwidgets/controllerbuilder/partials/_behavior.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/formwidgets/controllerbuilder/partials/_body.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/formwidgets/controllerbuilder/partials/_body.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/formwidgets/controllerbuilder/partials/_buildingarea.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/formwidgets/controllerbuilder/partials/_buildingarea.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/formwidgets/formbuilder/assets/js/formbuilder.controlpalette.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/formwidgets/formbuilder/assets/js/formbuilder.controlpalette.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/formwidgets/formbuilder/assets/js/formbuilder.domtopropertyjson.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/formwidgets/formbuilder/assets/js/formbuilder.domtopropertyjson.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/formwidgets/formbuilder/assets/js/formbuilder.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/formwidgets/formbuilder/assets/js/formbuilder.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/formwidgets/formbuilder/assets/js/formbuilder.tabs.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/formwidgets/formbuilder/assets/js/formbuilder.tabs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/formwidgets/formbuilder/partials/_body.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/formwidgets/formbuilder/partials/_body.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/formwidgets/formbuilder/partials/_buildingarea.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/formwidgets/formbuilder/partials/_buildingarea.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/formwidgets/formbuilder/partials/_controlbody.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/formwidgets/formbuilder/partials/_controlbody.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/formwidgets/formbuilder/partials/_controlcontainer.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/formwidgets/formbuilder/partials/_controlcontainer.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/formwidgets/formbuilder/partials/_controllist.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/formwidgets/formbuilder/partials/_controllist.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/formwidgets/formbuilder/partials/_controlpalette.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/formwidgets/formbuilder/partials/_controlpalette.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/formwidgets/formbuilder/partials/_controlwrapper.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/formwidgets/formbuilder/partials/_controlwrapper.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/formwidgets/formbuilder/partials/_tab.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/formwidgets/formbuilder/partials/_tab.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/formwidgets/formbuilder/partials/_tabpanel.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/formwidgets/formbuilder/partials/_tabpanel.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/formwidgets/formbuilder/partials/_tabs.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/formwidgets/formbuilder/partials/_tabs.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/formwidgets/menueditor/assets/js/menubuilder.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/formwidgets/menueditor/assets/js/menubuilder.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/formwidgets/menueditor/partials/_body.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/formwidgets/menueditor/partials/_body.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/formwidgets/menueditor/partials/_mainmenuitem.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/formwidgets/menueditor/partials/_mainmenuitem.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/formwidgets/menueditor/partials/_mainmenuitems.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/formwidgets/menueditor/partials/_mainmenuitems.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/formwidgets/menueditor/partials/_submenuitem.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/formwidgets/menueditor/partials/_submenuitem.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/formwidgets/menueditor/partials/_submenuitems.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/formwidgets/menueditor/partials/_submenuitems.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/lang/cs/lang.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/lang/cs/lang.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/lang/en/lang.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/lang/en/lang.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/lang/es/lang.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/lang/es/lang.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/lang/fa/lang.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/lang/fa/lang.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/lang/nl/lang.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/lang/nl/lang.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/lang/pt-br/lang.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/lang/pt-br/lang.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/models/Settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/models/Settings.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/models/settings/fields.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/models/settings/fields.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/phpunit.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/tests/TestCase.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/tests/TestCase.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/tests/fixtures/MyMock.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/tests/fixtures/MyMock.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/tests/fixtures/filesystemgenerator/templates/plugin.php.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/tests/fixtures/filesystemgenerator/templates/plugin.php.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/tests/unit/classes/FilesystemGeneratorTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/tests/unit/classes/FilesystemGeneratorTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/tests/unit/classes/ModelModelTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/tests/unit/classes/ModelModelTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/tests/unit/phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/tests/unit/phpunit.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/updates/version.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/updates/version.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/autoload.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/ClassLoader.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/ClassLoader.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/autoload_classmap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/autoload_namespaces.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/autoload_namespaces.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/autoload_psr4.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/autoload_real.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/autoload_real.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installed.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/CONTRIBUTING.md" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/CONTRIBUTING.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/phpunit.xml.dist" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/phpunit.xml.dist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/AglInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/AglInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/AimeosInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/AimeosInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/AnnotateCmsInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/AnnotateCmsInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/AsgardInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/AsgardInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/AttogramInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/AttogramInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/BaseInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/BaseInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/BitrixInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/BitrixInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/BonefishInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/BonefishInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/CakePHPInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/CakePHPInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/ChefInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/ChefInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/ClanCatsFrameworkInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/ClanCatsFrameworkInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/CockpitInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/CockpitInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/CodeIgniterInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/CodeIgniterInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/Concrete5Installer.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/Concrete5Installer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/CraftInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/CraftInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/CroogoInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/CroogoInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/DecibelInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/DecibelInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/DokuWikiInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/DokuWikiInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/DolibarrInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/DolibarrInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/DrupalInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/DrupalInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/ElggInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/ElggInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/EliasisInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/EliasisInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/ExpressionEngineInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/ExpressionEngineInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/EzPlatformInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/EzPlatformInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/FuelInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/FuelInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/FuelphpInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/FuelphpInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/GravInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/GravInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/HuradInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/HuradInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/ImageCMSInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/ImageCMSInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/Installer.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/Installer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/ItopInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/ItopInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/JoomlaInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/JoomlaInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/KanboardInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/KanboardInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/KirbyInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/KirbyInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/KodiCMSInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/KodiCMSInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/KohanaInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/KohanaInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/LanManagementSystemInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/LanManagementSystemInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/LaravelInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/LaravelInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/LavaLiteInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/LavaLiteInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/LithiumInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/LithiumInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/MODULEWorkInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/MODULEWorkInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/MODXEvoInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/MODXEvoInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/MagentoInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/MagentoInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/MajimaInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/MajimaInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/MakoInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/MakoInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/MauticInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/MauticInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/MayaInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/MayaInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/MediaWikiInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/MediaWikiInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/MicroweberInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/MicroweberInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/ModxInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/ModxInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/MoodleInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/MoodleInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/OctoberInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/OctoberInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/OntoWikiInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/OntoWikiInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/OsclassInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/OsclassInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/OxidInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/OxidInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/PPIInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/PPIInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/PhiftyInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/PhiftyInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/PhpBBInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/PhpBBInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/PimcoreInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/PimcoreInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/PiwikInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/PiwikInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/PlentymarketsInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/PlentymarketsInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/Plugin.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/Plugin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/PortoInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/PortoInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/PrestashopInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/PrestashopInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/PuppetInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/PuppetInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/PxcmsInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/PxcmsInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/RadPHPInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/RadPHPInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/ReIndexInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/ReIndexInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/RedaxoInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/RedaxoInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/RoundcubeInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/RoundcubeInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/SMFInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/SMFInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/ShopwareInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/ShopwareInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/SilverStripeInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/SilverStripeInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/SiteDirectInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/SiteDirectInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/SyDESInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/SyDESInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/Symfony1Installer.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/Symfony1Installer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/TYPO3CmsInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/TYPO3CmsInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/TYPO3FlowInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/TYPO3FlowInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/TheliaInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/TheliaInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/TuskInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/TuskInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/UserFrostingInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/UserFrostingInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/VanillaInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/VanillaInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/VgmcpInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/VgmcpInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/WHMCSInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/WHMCSInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/WolfCMSInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/WolfCMSInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/WordPressInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/WordPressInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/YawikInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/YawikInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/ZendInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/ZendInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/ZikulaInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/Composer/Installers/ZikulaInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/bootstrap.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/src/bootstrap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/tests/Composer/Installers/Test/AsgardInstallerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/tests/Composer/Installers/Test/AsgardInstallerTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/tests/Composer/Installers/Test/BitrixInstallerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/tests/Composer/Installers/Test/BitrixInstallerTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/tests/Composer/Installers/Test/CakePHPInstallerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/tests/Composer/Installers/Test/CakePHPInstallerTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/tests/Composer/Installers/Test/CraftInstallerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/tests/Composer/Installers/Test/CraftInstallerTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/tests/Composer/Installers/Test/DokuWikiInstallerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/tests/Composer/Installers/Test/DokuWikiInstallerTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/tests/Composer/Installers/Test/GravInstallerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/tests/Composer/Installers/Test/GravInstallerTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/tests/Composer/Installers/Test/InstallerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/tests/Composer/Installers/Test/InstallerTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/tests/Composer/Installers/Test/MayaInstallerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/tests/Composer/Installers/Test/MayaInstallerTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/tests/Composer/Installers/Test/MediaWikiInstallerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/tests/Composer/Installers/Test/MediaWikiInstallerTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/tests/Composer/Installers/Test/OctoberInstallerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/tests/Composer/Installers/Test/OctoberInstallerTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/tests/Composer/Installers/Test/OntoWikiInstallerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/tests/Composer/Installers/Test/OntoWikiInstallerTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/tests/Composer/Installers/Test/PimcoreInstallerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/tests/Composer/Installers/Test/PimcoreInstallerTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/tests/Composer/Installers/Test/PiwikInstallerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/tests/Composer/Installers/Test/PiwikInstallerTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/tests/Composer/Installers/Test/SiteDirectInstallerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/tests/Composer/Installers/Test/SiteDirectInstallerTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/tests/Composer/Installers/Test/SyDESInstallerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/tests/Composer/Installers/Test/SyDESInstallerTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/tests/Composer/Installers/Test/TestCase.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/tests/Composer/Installers/Test/TestCase.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/tests/Composer/Installers/Test/VgmcpInstallerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/tests/Composer/Installers/Test/VgmcpInstallerTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/tests/Composer/Installers/Test/YawikInstallerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/tests/Composer/Installers/Test/YawikInstallerTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/tests/bootstrap.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/vendor/composer/installers/tests/bootstrap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/ControllerList.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/ControllerList.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/DatabaseTableList.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/DatabaseTableList.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/DefaultBehaviorDesignTimeProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/DefaultBehaviorDesignTimeProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/DefaultControlDesignTimeProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/DefaultControlDesignTimeProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/LanguageList.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/LanguageList.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/ModelList.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/ModelList.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/PluginList.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/PluginList.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/VersionList.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/VersionList.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/controllerlist/partials/_body.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/controllerlist/partials/_body.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/controllerlist/partials/_controller-list.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/controllerlist/partials/_controller-list.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/controllerlist/partials/_items.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/controllerlist/partials/_items.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/controllerlist/partials/_toolbar.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/controllerlist/partials/_toolbar.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/controllerlist/partials/_widget-contents.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/controllerlist/partials/_widget-contents.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/databasetablelist/partials/_body.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/databasetablelist/partials/_body.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/databasetablelist/partials/_items.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/databasetablelist/partials/_items.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/databasetablelist/partials/_table-list.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/databasetablelist/partials/_table-list.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/databasetablelist/partials/_toolbar.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/databasetablelist/partials/_toolbar.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/databasetablelist/partials/_widget-contents.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/databasetablelist/partials/_widget-contents.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/defaultbehaviordesigntimeprovider/partials/_behavior-form-controller.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/defaultbehaviordesigntimeprovider/partials/_behavior-form-controller.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/defaultbehaviordesigntimeprovider/partials/_behavior-list-controller.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/defaultbehaviordesigntimeprovider/partials/_behavior-list-controller.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/defaultbehaviordesigntimeprovider/partials/_behavior-reorder-controller.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/defaultbehaviordesigntimeprovider/partials/_behavior-reorder-controller.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/defaultcontroldesigntimeprovider/partials/_control-checkbox.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/defaultcontroldesigntimeprovider/partials/_control-checkbox.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/defaultcontroldesigntimeprovider/partials/_control-checkboxlist.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/defaultcontroldesigntimeprovider/partials/_control-checkboxlist.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/defaultcontroldesigntimeprovider/partials/_control-codeeditor.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/defaultcontroldesigntimeprovider/partials/_control-codeeditor.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/defaultcontroldesigntimeprovider/partials/_control-colorpicker.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/defaultcontroldesigntimeprovider/partials/_control-colorpicker.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/defaultcontroldesigntimeprovider/partials/_control-datepicker.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/defaultcontroldesigntimeprovider/partials/_control-datepicker.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/defaultcontroldesigntimeprovider/partials/_control-dropdown.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/defaultcontroldesigntimeprovider/partials/_control-dropdown.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/defaultcontroldesigntimeprovider/partials/_control-fileupload.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/defaultcontroldesigntimeprovider/partials/_control-fileupload.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/defaultcontroldesigntimeprovider/partials/_control-hint.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/defaultcontroldesigntimeprovider/partials/_control-hint.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/defaultcontroldesigntimeprovider/partials/_control-markdown.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/defaultcontroldesigntimeprovider/partials/_control-markdown.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/defaultcontroldesigntimeprovider/partials/_control-mediafinder.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/defaultcontroldesigntimeprovider/partials/_control-mediafinder.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/defaultcontroldesigntimeprovider/partials/_control-number.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/defaultcontroldesigntimeprovider/partials/_control-number.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/defaultcontroldesigntimeprovider/partials/_control-partial.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/defaultcontroldesigntimeprovider/partials/_control-partial.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/defaultcontroldesigntimeprovider/partials/_control-password.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/defaultcontroldesigntimeprovider/partials/_control-password.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/defaultcontroldesigntimeprovider/partials/_control-radio.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/defaultcontroldesigntimeprovider/partials/_control-radio.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/defaultcontroldesigntimeprovider/partials/_control-recordfinder.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/defaultcontroldesigntimeprovider/partials/_control-recordfinder.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/defaultcontroldesigntimeprovider/partials/_control-relation.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/defaultcontroldesigntimeprovider/partials/_control-relation.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/defaultcontroldesigntimeprovider/partials/_control-repeater.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/defaultcontroldesigntimeprovider/partials/_control-repeater.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/defaultcontroldesigntimeprovider/partials/_control-richeditor.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/defaultcontroldesigntimeprovider/partials/_control-richeditor.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/defaultcontroldesigntimeprovider/partials/_control-section.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/defaultcontroldesigntimeprovider/partials/_control-section.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/defaultcontroldesigntimeprovider/partials/_control-static-repeater.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/defaultcontroldesigntimeprovider/partials/_control-static-repeater.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/defaultcontroldesigntimeprovider/partials/_control-switch.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/defaultcontroldesigntimeprovider/partials/_control-switch.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/defaultcontroldesigntimeprovider/partials/_control-text.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/defaultcontroldesigntimeprovider/partials/_control-text.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/defaultcontroldesigntimeprovider/partials/_control-textarea.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/defaultcontroldesigntimeprovider/partials/_control-textarea.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/defaultcontroldesigntimeprovider/partials/_control-unknowncontrol.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/defaultcontroldesigntimeprovider/partials/_control-unknowncontrol.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/languagelist/partials/_body.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/languagelist/partials/_body.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/languagelist/partials/_items.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/languagelist/partials/_items.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/languagelist/partials/_language-list.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/languagelist/partials/_language-list.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/languagelist/partials/_toolbar.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/languagelist/partials/_toolbar.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/languagelist/partials/_widget-contents.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/languagelist/partials/_widget-contents.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/modellist/partials/_body.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/modellist/partials/_body.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/modellist/partials/_items.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/modellist/partials/_items.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/modellist/partials/_model-list.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/modellist/partials/_model-list.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/modellist/partials/_toolbar.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/modellist/partials/_toolbar.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/modellist/partials/_widget-contents.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/modellist/partials/_widget-contents.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/pluginlist/partials/_body.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/pluginlist/partials/_body.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/pluginlist/partials/_items.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/pluginlist/partials/_items.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/pluginlist/partials/_plugin-list.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/pluginlist/partials/_plugin-list.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/pluginlist/partials/_toolbar-buttons.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/pluginlist/partials/_toolbar-buttons.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/pluginlist/partials/_toolbar.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/pluginlist/partials/_toolbar.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/versionlist/partials/_body.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/versionlist/partials/_body.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/versionlist/partials/_items.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/versionlist/partials/_items.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/versionlist/partials/_toolbar.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/versionlist/partials/_toolbar.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/versionlist/partials/_version-list.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/versionlist/partials/_version-list.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/versionlist/partials/_widget-contents.htm" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/builder/widgets/versionlist/partials/_widget-contents.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/sepehr/details/updates/version.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/sepehr/details/updates/version.yaml" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="Sex.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plugins/sepehr/details/controllers/Sex.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="20" column="68" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="68" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PaymentTypes.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/plugins/sepehr/details/controllers/PaymentTypes.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="12" column="73" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="73" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DistributionTimes.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plugins/sepehr/details/controllers/DistributionTimes.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="12" column="75" selection-start-line="12" selection-start-column="75" selection-end-line="12" selection-end-column="75" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FrameworkCommandLineHistory">
+    <commandsHistory>
+      <command text="artisan ide-helper:eloquent" />
+      <command text="artisan ide-helper:generate " />
+      <command text="artisan ide-helper:meta" />
+      <command text="artisan ide-helper:models " />
+    </commandsHistory>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/modules/backend/facades/Backend.php" />
+        <option value="$PROJECT_DIR$/plugins/sepehr/nazari/Plugin.php" />
+        <option value="$PROJECT_DIR$/plugins/sepehr/nazari/controllers/Genders.php" />
+        <option value="$PROJECT_DIR$/plugins/sepehr/details/models/PaymentTypes.php" />
+        <option value="$PROJECT_DIR$/plugins/sepehr/details/models/PaymentType.php" />
+        <option value="$PROJECT_DIR$/plugins/sepehr/details/models/DistributionTime.php" />
+        <option value="$PROJECT_DIR$/plugins/sepehr/details/controllers/PaymentTypes.php" />
+        <option value="$PROJECT_DIR$/plugins/sepehr/details/controllers/DistributionTimes.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/vendor/kriswallsmith/assetic/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1346" />
+    <option name="height" value="688" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="post" type="b2602c69:ProjectViewProjectNode" />
+              <item name="post" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="post" type="b2602c69:ProjectViewProjectNode" />
+              <item name="post" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="plugins" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="post" type="b2602c69:ProjectViewProjectNode" />
+              <item name="post" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="plugins" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="sepehr" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="post" type="b2602c69:ProjectViewProjectNode" />
+              <item name="post" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="plugins" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="sepehr" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="details" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="post" type="b2602c69:ProjectViewProjectNode" />
+              <item name="post" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="plugins" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="sepehr" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="details" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="post" type="b2602c69:ProjectViewProjectNode" />
+              <item name="post" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="plugins" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="sepehr" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="details" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="models" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.zend.framework.tool" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4a3b45dd-757b-48fa-9391-33512bb6e8d4" name="Default" comment="" />
+      <created>1538312228913</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1538312228913</updated>
+      <workItem from="1538312243030" duration="248000" />
+      <workItem from="1538312529021" duration="976000" />
+      <workItem from="1538313547041" duration="1733000" />
+      <workItem from="1538327882338" duration="255000" />
+      <workItem from="1538330652678" duration="2220000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="5432000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2647504" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Command Line Tools Console" order="8" weight="0.3294893" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/plugins/sepehr/nazari/Plugin.php" />
+    <entry file="file://$PROJECT_DIR$/modules/system/classes/PluginBase.php" />
+    <entry file="file://$PROJECT_DIR$/modules/backend/facades/Backend.php" />
+    <entry file="file://$PROJECT_DIR$/plugins/sepehr/nazari/controllers/Genders.php" />
+    <entry file="file://$PROJECT_DIR$/plugins/sepehr/nazari/Plugin.php" />
+    <entry file="file://$PROJECT_DIR$/plugins/sepehr/nazari/controllers/Genders.php" />
+    <entry file="file://$PROJECT_DIR$/plugins/sepehr/nazari/Plugin.php" />
+    <entry file="file://$PROJECT_DIR$/modules/backend/facades/Backend.php" />
+    <entry file="file://$PROJECT_DIR$/modules/system/classes/PluginBase.php" />
+    <entry file="file://$PROJECT_DIR$/plugins/sepehr/nazari/Plugin.php" />
+    <entry file="file://$PROJECT_DIR$/plugins/sepehr/nazari/controllers/Genders.php" />
+    <entry file="file://$PROJECT_DIR$/plugins/sepehr/details/models/PaymentTypes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/sepehr/details/Plugin.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/sepehr/details/models/DistributionTime.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="31" column="45" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/sepehr/details/models/Sex.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="35" lean-forward="true" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/sepehr/details/models/PaymentType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="31" column="45" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/sepehr/details/controllers/Sex.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="20" column="68" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/sepehr/details/controllers/DistributionTimes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="12" column="75" selection-start-line="12" selection-start-column="75" selection-end-line="12" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/sepehr/details/controllers/PaymentTypes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="12" column="73" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

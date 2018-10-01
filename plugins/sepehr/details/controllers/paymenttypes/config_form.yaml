@@ -1,0 +1,10 @@
+name: PaymentTypes
+form: $/sepehr/details/models/paymenttype/fields.yaml
+modelClass: Sepehr\Details\Models\PaymentType
+defaultRedirect: sepehr/details/paymenttypes
+create:
+    redirect: 'sepehr/details/paymenttypes/update/:id'
+    redirectClose: sepehr/details/paymenttypes
+update:
+    redirect: sepehr/details/paymenttypes
+    redirectClose: sepehr/details/paymenttypes
