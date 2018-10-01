@@ -13,11 +13,11 @@ class Sex extends Controller
     public $listConfig = 'config_list.yaml';
     public $formConfig = 'config_form.yaml';
 
-    public $requiredPermissions = ['sepehr.details.access_sex'];
+    public $requiredPermissions = ['sepehr.details.users.access_sex'];
 
     public function __construct()
     {
         parent::__construct();
-        BackendMenu::setContext('Sepehr.Details', 'details', 'sex');
+        BackendMenu::setContext('Sepehr.Details', 'details', 'users');
     }
 }

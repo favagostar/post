@@ -13,11 +13,11 @@ class PaymentTypes extends Controller
     public $listConfig = 'config_list.yaml';
     public $formConfig = 'config_form.yaml';
 
-    public $requiredPermissions = ['sepehr.details.access_payment_type'];
+    public $requiredPermissions = ['sepehr.details.financial.access_payment_type'];
 
     public function __construct()
     {
         parent::__construct();
-        BackendMenu::setContext('Sepehr.Details', 'details', 'paymentTypes');
+        BackendMenu::setContext('Sepehr.Details', 'details', 'financial');
     }
 }
