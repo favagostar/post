@@ -24,7 +24,7 @@ class PostType extends Model
 
     public $customMessages = [
         "name.required" => 'لطفا عنوان را وارد کنید.',
-        "name.max" => 'عنوان نباید بیشتر از 10 کاراکتر باشد.'
+        "name.max" => 'عنوان نباید بیشتر از 50 کاراکتر باشد.'
     ];
 
     /**
