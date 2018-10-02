@@ -1,6 +1,6 @@
 plugin:
-    name: 'sepehr.service::lang.plugin.name'
-    description: 'sepehr.service::lang.plugin.description'
-    author: sepehr
-    icon: oc-icon-adjust
-    homepage: ''
+    name:
+    description:
+    author:
+    icon:
+    homepage:
