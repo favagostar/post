@@ -58,7 +58,7 @@ tabs:
                         span: auto
                         type: number
                     special_services_id:
-                        label: Dropdown
+                        label: 'خدمات ویژه'
                         span: auto
                         type: dropdown
                     price:
@@ -73,18 +73,40 @@ tabs:
                         label: 'نوع بیمه'
                         span: auto
                         type: dropdown
-                    transaction_code_id:
+                    transaction_code:
                         label: 'وضعیت تراکنش'
                         span: auto
-                        type: dropdown
-                    location_point:
+                        type: text
+                    points:
                         label: 'نقاط GPS'
                         span: auto
+                        disabled: 1
+                        context:
+                            - preview
                         type: text
         postmans:
             label: پستچی
-            prompt: 'افزودن پستچی'
+            prompt: 'Add new item'
             span: full
             type: repeater
-            tab: مرسوله
-            form: {  }
+            tab: پستچی
+            form:
+                fields:
+                    postman_id:
+                        label: پستچی
+                        span: auto
+                        type: dropdown
+                    acceptance:
+                        label: پذیرش
+                        span: full
+                        type: checkbox
+                    accepted_at:
+                        label: 'تاریخ پذیرش'
+                        mode: datetime
+                        span: auto
+                        type: datepicker
+                    receive_at:
+                        label: 'تاریخ دریافت'
+                        mode: datetime
+                        span: auto
+                        type: datepicker
