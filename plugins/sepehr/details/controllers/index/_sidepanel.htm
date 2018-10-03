@@ -93,6 +93,83 @@
                 </form>
             <?php endif;?>
 
+
+            <!-- Services -->
+            <?php if($this->user->hasAccess('sepehr.details.service.*')): ?>
+            <form
+                    class="layout hide"
+                    id="sidebarServices"
+                    data-content-id="services"
+                    data-template-type="services"
+                    data-type-icon="oc-icon-table"
+                    onsubmit="return false">
+                <div id="ControllerList-controllerList-body" class="layout">
+                    <div class="layout-row min-size panel-contents">
+                        <div class="sidepanel-content-header">
+                            <span>خدمات</span>
+                        </div>
+                    </div>
+                    <div class="layout-row">
+                        <div class="layout-cell">
+                            <div class="layout-relative">
+                                <div class="layout-absolute">
+                                    <div class="control-scrollpad" data-control="scrollpad" data-disposable="">
+                                        <div class="scrollpad-scrollbar" data-hidden="true">
+                                            <div class="drag-handle"></div>
+                                        </div>
+                                        <div class="scroll-wrapper" style="margin-right: -17px">
+                                            <div class="control-filelist single-line" data-control="filelist" data-ignore-item-click="true" id="ControllerList-controllerList-plugin-controller-list">
+                                                <ul>
+                                                    <!--specialServices-->
+                                                    <?php if($this->user->hasAccess('sepehr.details.service.access_special_service')): ?>
+                                                    <li id="specialServices" class="item">
+                                                        <a href="<?=Backend::url('sepehr/details/specialServices')?>" >
+                                                            <span class="title">انواع خدمات ویژه</span>
+                                                            <span class="borders"></span>
+                                                        </a>
+                                                    </li>
+                                                    <?php endif;?>
+
+                                                    <!--postTypes-->
+                                                    <?php if($this->user->hasAccess('sepehr.details.service.access_post_type')): ?>
+                                                    <li id="postTypes" class="item">
+                                                        <a href="<?=Backend::url('sepehr/details/posttypes')?>" >
+                                                            <span class="title">انواع پست</span>
+                                                            <span class="borders"></span>
+                                                        </a>
+                                                    </li>
+                                                    <?php endif;?>
+
+                                                    <!--packageTypes-->
+                                                    <?php if($this->user->hasAccess('sepehr.details.service.access_package_type')): ?>
+                                                    <li id="packageTypes" class="item">
+                                                        <a href="<?=Backend::url('sepehr/details/packageTypes')?>" >
+                                                            <span class="title">انواع بسته </span>
+                                                            <span class="borders"></span>
+                                                        </a>
+                                                    </li>
+                                                    <?php endif;?>
+
+                                                    <!--packageTypes-->
+                                                    <?php if($this->user->hasAccess('sepehr.details.service.access_distribution_time')): ?>
+                                                    <li id="distributionTimes" class="item">
+                                                        <a href="<?=Backend::url('sepehr/details/distributionTimes')?>" >
+                                                            <span class="title">انواع زمان توزیع </span>
+                                                            <span class="borders"></span>
+                                                        </a>
+                                                    </li>
+                                                    <?php endif;?>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <?php endif;?>
         </div>
     </div>
 </div>

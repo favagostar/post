@@ -13,7 +13,7 @@ class DistributionTimes extends Controller
     public $listConfig = 'config_list.yaml';
     public $formConfig = 'config_form.yaml';
 
-    public $requiredPermissions = ['sepehr.details.access_distribution_time'];
+    public $requiredPermissions = ["sepehr.details.service.access_distribution_time"];
 
     public function __construct()
     {
