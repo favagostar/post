@@ -20,11 +20,6 @@ tabs:
             span: auto
             type: dropdown
             tab: 'اطلاعات اولیه'
-        distribution_time_id:
-            label: 'بازه تحویل بسته پستی'
-            span: auto
-            type: dropdown
-            tab: مرسوله
         packages:
             label: 'بسته های پستی'
             prompt: 'افزودن بسته جدید'
@@ -51,6 +46,10 @@ tabs:
                         type: text
                     post_type_id:
                         label: 'نحوه ارسال'
+                        span: auto
+                        type: dropdown
+                    distribution_time_id:
+                        label: 'بازه تحویل بسته پستی'
                         span: auto
                         type: dropdown
                     weight:
