@@ -13,7 +13,7 @@ class PostTypes extends Controller
     public $listConfig = 'config_list.yaml';
     public $formConfig = 'config_form.yaml';
 
-    public $requiredPermissions = ['sepehr.details.access_post_type'];
+    public $requiredPermissions = ['sepehr.details.service.access_post_type'];
 
     public function __construct()
     {
