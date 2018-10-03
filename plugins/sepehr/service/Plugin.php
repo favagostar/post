@@ -25,7 +25,12 @@ class Plugin extends PluginBase
                 "tab" => 'مشخصات سرویس',
                 "label" => ' مدیریت سرویس ها ',
                 "order" => 1
-            ]
+            ],
+            "sepehr.service.access.service" => [
+                "tab" => 'مشخصات سرویس',
+                "label" => ' مدیریت سرویس ',
+                "order" => 2
+            ],
         ];
     }
 
@@ -34,12 +39,19 @@ class Plugin extends PluginBase
         return [
             'services' => [
                 'label' => 'سرویس',
-                'url' => Backend::url('sepehr/service/services'),
+                'url' => Backend::url('sepehr/service/index'),
                 'iconSvg' => 'plugins/sepehr/service/assets/images/service.svg',
                 'permissions' => ['sepehr.service.*'],
                 'order' => 300,
                 'sideMenu' => [
-                    ''
+                    'service'=>[
+                        'label' => 'سرویس',
+                        'url' => Backend::url('sepehr/service/services'),
+                        'icon' => 'icon-envelope',
+                        'permissions' => ['sepehr.service.*'],
+                        'order' => 300,
+                    ],
+
                 ]
             ]
         ];
