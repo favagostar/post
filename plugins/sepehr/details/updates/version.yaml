@@ -20,3 +20,6 @@
 1.0.7:
     - 'Created table sepehr_details_insurance_type'
     - builder_table_create_sepehr_details_insurance_type.php
+1.0.8:
+    - 'Created table sepehr_details_country_code'
+    - builder_table_create_sepehr_details_country_code.php
