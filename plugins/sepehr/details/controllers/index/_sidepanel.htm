@@ -27,6 +27,7 @@
                                                 <div class="scroll-wrapper" style="margin-right: -17px">
                                                     <div class="control-filelist single-line" data-control="filelist" data-ignore-item-click="true" id="ControllerList-controllerList-plugin-controller-list">
                                                         <ul>
+                                                            <!-- sex -->
                                                         	<?php if($this->user->hasAccess('sepehr.details.users.access_sex')): ?>
                                                                 <li id="sex" class="item">
                                                                     <a href="<?=Backend::url('sepehr/details/sex')?>" >
@@ -34,6 +35,16 @@
                                                                         <span class="borders"></span>
                                                                     </a>
                                                                 </li>
+                                                            <?php endif;?>
+
+                                                            <!--country code-->
+                                                            <?php if($this->user->hasAccess('sepehr.details.users.access_country_code')): ?>
+                                                            <li id="countryCodes" class="item">
+                                                                <a href="<?=Backend::url('sepehr/details/countryCodes')?>" >
+                                                                    <span class="title">کد کشورها</span>
+                                                                    <span class="borders"></span>
+                                                                </a>
+                                                            </li>
                                                             <?php endif;?>
                                                         </ul>
                                                     </div>
