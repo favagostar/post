@@ -1,0 +1,111 @@
+tabs:
+    fields:
+        user_id:
+            label: کاربر
+            span: auto
+            type: dropdown
+            tab: 'اطلاعات اولیه'
+        manager_id:
+            label: مدیر
+            span: auto
+            type: dropdown
+            tab: 'اطلاعات اولیه'
+        operator_id:
+            label: اپراتور
+            span: auto
+            type: dropdown
+            tab: 'اطلاعات اولیه'
+        payment_type_id:
+            label: 'نوع پرداخت'
+            span: auto
+            type: dropdown
+            tab: 'اطلاعات اولیه'
+        packages:
+            label: 'بسته های پستی'
+            prompt: 'افزودن بسته جدید'
+            span: full
+            type: repeater
+            tab: مرسوله
+            form:
+                fields:
+                    sender_postal_code:
+                        label: 'کد پستی مبدا'
+                        span: auto
+                        type: text
+                    sender_address:
+                        label: 'آدرس مبدا'
+                        span: auto
+                        type: text
+                    receiver_postal_code:
+                        label: 'کد پستی مقصد'
+                        span: auto
+                        type: text
+                    receiver_address:
+                        label: 'آدرس مقصد'
+                        span: auto
+                        type: text
+                    post_type_id:
+                        label: 'نحوه ارسال'
+                        span: auto
+                        type: dropdown
+                    distribution_time_id:
+                        label: 'بازه تحویل بسته پستی'
+                        span: auto
+                        type: dropdown
+                    weight:
+                        label: 'وزن مرسوله'
+                        span: auto
+                        type: number
+                    special_services_id:
+                        label: 'خدمات ویژه'
+                        span: auto
+                        type: dropdown
+                    price:
+                        label: 'هزینه خدمات'
+                        span: auto
+                        type: number
+                    package_type_id:
+                        label: 'نوع بسته'
+                        span: auto
+                        type: dropdown
+                    insurance_type_id:
+                        label: 'نوع بیمه'
+                        span: auto
+                        type: dropdown
+                    transaction_code:
+                        label: 'وضعیت تراکنش'
+                        span: auto
+                        type: text
+                    points:
+                        label: 'نقاط GPS'
+                        span: auto
+                        disabled: 1
+                        context:
+                            - preview
+                        type: text
+        postmans:
+            label: پستچی
+            prompt: 'Add new item'
+            span: full
+            type: repeater
+            tab: پستچی
+            form:
+                fields:
+                    postman_id:
+                        label: پستچی
+                        span: auto
+                        type: dropdown
+                    acceptance:
+                        label: پذیرش
+                        span: full
+                        type: checkbox
+                    accepted_at:
+                        label: 'تاریخ پذیرش'
+                        mode: datetime
+                        span: auto
+                        type: datepicker
+                    receive_at:
+                        label: 'تاریخ دریافت'
+                        mode: datetime
+                        span: auto
+                        type: datepicker
