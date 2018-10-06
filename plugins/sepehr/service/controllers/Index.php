@@ -5,6 +5,7 @@ use BackendMenu;
 
 class Index extends Controller
 {
+	public $pageTitle = 'مدیریت سرویس';
 
     public $requiredPermissions=['sepehr.sercive.*'];
 
@@ -16,7 +17,5 @@ class Index extends Controller
 
     public function index()
     {
-
     }
 }
-

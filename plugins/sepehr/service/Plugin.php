@@ -21,15 +21,10 @@ class Plugin extends PluginBase
     public function registerPermissions()
     {
         return [
-            "sepehr.service.*" => [
-                "tab" => 'مشخصات سرویس',
-                "label" => ' مدیریت سرویس ها ',
+            "sepehr.service.access_service" => [
+                "tab" => 'سرویس',
+                "label" => 'مدیریت سرویس',
                 "order" => 1
-            ],
-            "sepehr.service.access.service" => [
-                "tab" => 'مشخصات سرویس',
-                "label" => ' مدیریت سرویس ',
-                "order" => 2
             ],
         ];
     }
@@ -48,7 +43,7 @@ class Plugin extends PluginBase
                         'label' => 'سرویس',
                         'url' => Backend::url('sepehr/service/services'),
                         'icon' => 'icon-envelope',
-                        'permissions' => ['sepehr.service.*'],
+                        'permissions' => ['sepehr.service.access_service'],
                         'order' => 300,
                     ],
 

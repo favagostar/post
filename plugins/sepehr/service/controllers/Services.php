@@ -11,10 +11,9 @@ class Services extends Controller
     'Backend\Behaviors\FormController'
   ];
 
-  public $requiredPermissions = ['sepehr.service.access.service'];
+  public $requiredPermissions = ['sepehr.service.access_service'];
   public $listConfig = 'config_list.yaml';
   public $formConfig = 'config_form.yaml';
-
 
   public function __construct()
   {
