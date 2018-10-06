@@ -5,11 +5,6 @@ tabs:
             span: auto
             type: dropdown
             tab: 'اطلاعات اولیه'
-        manager_id:
-            label: مدیر
-            span: auto
-            type: dropdown
-            tab: 'اطلاعات اولیه'
         operator_id:
             label: اپراتور
             span: auto
