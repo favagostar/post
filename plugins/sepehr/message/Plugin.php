@@ -12,7 +12,7 @@ class Plugin extends PluginBase
 			"name" 			=> 'sepehr.message::lang.plugin.name',
 			"description" 	=> 'sepehr.message::lang.plugin.description',
 		    "author" 		=> "sepehr",
-		    "icon" 			=> "oc-icon-bell",
+		    "icon" 			=> "oc-icon-envelope-o",
 		    "homepage" 		=> ''
 			];
 	}
@@ -29,19 +29,19 @@ class Plugin extends PluginBase
 	{
 		return [
             'messages' => [
-                'label'       => 'مدیریت پیام ها',
-                'url'         => Backend::url('sepehr/message/index'),
+                'label'       => 'پیام ها',
+                'url'         => Backend::url('sepehr/message/indexPage'),
                 'icon'        => 'oc-icon-bell',
-                'iconSvg'     => 'plugins/sepehr/details/assets/images/checked.svg',
-                'permissions' => ['sepehr.message.access_message'],
+                'iconSvg'     => 'plugins/sepehr/message/assets/images/email.svg',
+                'permissions' => ['sepehr.message.*'],
                 'order'       => 300,
                 'sideMenu' 	  => [
                 	"message" => [
-                		'label' 		=> 'پیام ها',
-		                'url'   		=> Backend::url('sepehr/message/messages'),
-		                'icon'  	  	=> 'oc-icon-bell',
-                    	'attributes'    => ['data-menu-item'=>'message'],
-		                'permissions' 	=> ['sepehr.message.access_message']
+                		'label' 		       => 'لیست پیام ها',
+		                'url'   		       => Backend::url('sepehr/message/messages'),
+		                'icon'  	  	     => 'oc-icon-list',
+                    	'attributes'     => ['data-menu-item'=>'message'],
+		                'permissions' 	   => ['sepehr.message.access_message']
                 	]
                 ]
 			]
@@ -51,13 +51,11 @@ class Plugin extends PluginBase
 	public function registerPermissions()
 	{
 		return [
-      //users
-  			"sepehr.details.users.access_message" => [
-  				"tab" 	=> 'اطلاعات پایه اشخاص',
+  			"sepehr.message.access_message" => [
+  				"tab" 	=> 'پیام ها',
   				"label" => 'ممدیریت پیام ها',
   				"order" => 1
   			]
   		];
   	}
-
 }

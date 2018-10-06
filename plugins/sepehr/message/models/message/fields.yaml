@@ -1,17 +1,17 @@
 fields:
     users:
         label: کاربران
-        prompt: 'Add new item'
+        prompt: 'اضافه کردن کاربر جدید'
         span: auto
         type: repeater
         form:
             fields:
                 user_id:
                     label: کاربر
-                    span: auto
+                    span: full
                     type: dropdown
     description:
         label: 'متن پیام'
-        span: auto
-        size: ''
+        size: small
+        span: full
         type: textarea
