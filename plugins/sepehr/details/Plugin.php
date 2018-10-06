@@ -25,6 +25,11 @@ class Plugin extends PluginBase
                 "label" => 'مدیریت جنسیت ها',
                 "order" => 1
             ],
+            "sepehr.details.users.access_country_code" => [
+                "tab" => 'اطلاعات پایه اشخاص',
+                "label" => 'مدیریت کد کشورها',
+                "order" => 1
+            ],
 
             //financial
             "sepehr.details.financial.access_payment_type" => [
