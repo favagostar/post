@@ -5,6 +5,8 @@ use BackendMenu;
 
 class Index extends Controller
 {
+	public $pageTitle = 'اطلاعات پایه';
+
     public function __construct()
     {
         parent::__construct();
