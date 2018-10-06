@@ -36,7 +36,7 @@ class UserGroups extends Controller
     /**
      * @var array Permissions required to view this page.
      */
-    public $requiredPermissions = ['rainlab.users.access_groups'];
+    public $requiredPermissions = ['rainlab.users.main.access_groups'];
 
     /**
      * Constructor.

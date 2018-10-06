@@ -78,11 +78,11 @@ class Plugin extends PluginBase
     public function registerPermissions()
     {
         return [
-            'rainlab.users.access_users' => [
+            'rainlab.users.main.access_users' => [
                 'tab'   => 'rainlab.user::lang.plugin.tab',
                 'label' => 'rainlab.user::lang.plugin.access_users'
             ],
-            'rainlab.users.access_groups' => [
+            'rainlab.users.main.access_groups' => [
                 'tab'   => 'rainlab.user::lang.plugin.tab',
                 'label' => 'rainlab.user::lang.plugin.access_groups'
             ],
@@ -90,7 +90,7 @@ class Plugin extends PluginBase
                 'tab'   => 'rainlab.user::lang.plugin.tab',
                 'label' => 'rainlab.user::lang.plugin.access_settings'
             ],
-            'rainlab.users.impersonate_user' => [
+            'rainlab.users.main.impersonate_user' => [
                 'tab'   => 'rainlab.user::lang.plugin.tab',
                 'label' => 'rainlab.user::lang.plugin.impersonate_user'
             ],
@@ -105,20 +105,20 @@ class Plugin extends PluginBase
                 'url'         => Backend::url('rainlab/user/index'),
                 'icon'        => 'icon-user',
                 'iconSvg'     => 'plugins/rainlab/user/assets/images/user-icon.svg',
-                'permissions' => ['rainlab.users.*'],
+                'permissions' => ['rainlab.users.main.*'],
                 'order'       => 500,
                 'sideMenu'    => [
                     'users' => [
                         'label'       => 'کاربران',
                         'url'         => Backend::url('rainlab/user/users'),
                         'icon'        => 'icon-user',
-                        'permissions' => ['rainlab.users.access_users'],
+                        'permissions' => ['rainlab.users.main.access_users'],
                     ],
                     'usergroups' => [
                         'label'       => 'گروه های کاربری',
                         'url'         => Backend::url('rainlab/user/usergroups'),
                         'icon'        => 'icon-users',
-                        'permissions' => ['rainlab.users.access_groups'],
+                        'permissions' => ['rainlab.users.main.access_groups'],
                     ]                    
                 ]
             ]

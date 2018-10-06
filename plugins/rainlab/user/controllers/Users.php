@@ -41,7 +41,7 @@ class Users extends Controller
     /**
      * @var array Permissions required to view this page.
      */
-    public $requiredPermissions = ['rainlab.users.access_users'];
+    public $requiredPermissions = ['rainlab.users.main.access_users'];
 
     /**
      * @var string HTML body tag class
