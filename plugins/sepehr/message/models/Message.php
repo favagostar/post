@@ -14,6 +14,8 @@ class Message extends Model
 
     protected $dates = ['deleted_at'];
 
+
+    protected $jsonable=['users'];
     /**
      * @var array Validation rules
      */
