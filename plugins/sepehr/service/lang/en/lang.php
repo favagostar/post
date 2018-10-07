@@ -1,6 +1,6 @@
 <?php return [
     'plugin' => [
-        'name' => 'service',
-        'description' => 'این افزونه برای سرویس پستی می باشد.'
+        'name' => 'سرویس پست',
+        'description' => 'افزونه مدیریت سیستم پست'
     ]
 ];
