@@ -1,20 +1,21 @@
+fields:
+    user_id:
+        label: کاربر
+        span: auto
+        type: dropdown
+        tab: 'اطلاعات اولیه'
+    operator_id:
+        label: اپراتور
+        span: auto
+        type: dropdown
+        tab: 'اطلاعات اولیه'
+    payment_type_id:
+        label: 'نوع پرداخت'
+        span: auto
+        type: dropdown
+        tab: 'اطلاعات اولیه'
 tabs:
     fields:
-        user_id:
-            label: کاربر
-            span: auto
-            type: dropdown
-            tab: 'اطلاعات اولیه'
-        operator_id:
-            label: اپراتور
-            span: auto
-            type: dropdown
-            tab: 'اطلاعات اولیه'
-        payment_type_id:
-            label: 'نوع پرداخت'
-            span: auto
-            type: dropdown
-            tab: 'اطلاعات اولیه'
         packages:
             label: 'بسته های پستی'
             prompt: 'افزودن بسته جدید'
