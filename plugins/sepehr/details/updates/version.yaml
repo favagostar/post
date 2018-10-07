@@ -23,3 +23,6 @@
 1.0.8:
     - 'Created table sepehr_details_country_code'
     - builder_table_create_sepehr_details_country_code.php
+1.0.9:
+    - 'Updated table sepehr_details_country_code'
+    - builder_table_update_sepehr_details_country_code.php

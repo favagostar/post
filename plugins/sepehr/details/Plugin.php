@@ -1,7 +1,11 @@
 <?php namespace Sepehr\Details;
 
 use System\Classes\PluginBase;
+use System\Classes\SettingsManager;
+use RainLab\User\Models\User;
+use Ls\Details\Models\ProccessRegisterUserCourse;
 use Backend;
+use ApplicationException;
 
 class Plugin extends PluginBase
 {
@@ -102,9 +106,6 @@ class Plugin extends PluginBase
 
     public function registerComponents()
     {
-    }
-
-    public function registerSettings()
-    {
+        return [];
     }
 }
