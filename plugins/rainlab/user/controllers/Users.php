@@ -12,6 +12,7 @@ use RainLab\User\Models\User;
 use RainLab\User\Models\UserGroup;
 use RainLab\User\Models\MailBlocker;
 use RainLab\User\Models\Settings as UserSettings;
+use Carbon\Carbon;
 
 class Users extends Controller
 {
@@ -137,6 +138,12 @@ class Users extends Controller
         if ($redirect = $this->makeRedirect('update-close', $model)) {
             return $redirect;
         }
+    }
+
+    public function formBeforeCreate($model)
+    {
+        $model->is_activated = 1;
+        $model->activated_at = Carbon::now();
     }
 
     /**

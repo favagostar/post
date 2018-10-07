@@ -12,14 +12,19 @@ tabs:
             label: rainlab.user::lang.user.surname
             span: auto
             tab: اطلاعات عمومی
-        national_code:
-            label: rainlab.user::lang.user.national_code
+        country_code:
+            label: rainlab.user::lang.user.country_code
             span: auto
             tab: اطلاعات عمومی       
+            type: dropdown
         mobile:
             label: rainlab.user::lang.user.mobile
             span: auto
-            tab: اطلاعات عمومی                   
+            tab: اطلاعات عمومی  
+        national_code:
+            label: rainlab.user::lang.user.national_code
+            span: auto
+            tab: اطلاعات عمومی                                
         sex_id:
             label: جنسیت
             type: dropdown

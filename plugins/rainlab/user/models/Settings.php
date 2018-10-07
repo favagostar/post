@@ -17,7 +17,8 @@ class Settings extends Model
     public $settingsFields = 'fields.yaml';
 
     const ACTIVATE_AUTO = 'auto';
-    const ACTIVATE_USER = 'user';
+    const ACTIVATE_USER_EMAIL = 'user_email';
+    const ACTIVATE_USER_SMS = 'user_sms';
     const ACTIVATE_ADMIN = 'admin';
 
     const LOGIN_EMAIL = 'email';
@@ -40,10 +41,14 @@ class Settings extends Model
                 'rainlab.user::lang.settings.activate_mode_auto',
                 'rainlab.user::lang.settings.activate_mode_auto_comment'
             ],
-            self::ACTIVATE_USER => [
+            self::ACTIVATE_USER_EMAIL => [
                 'rainlab.user::lang.settings.activate_mode_user',
                 'rainlab.user::lang.settings.activate_mode_user_comment'
             ],
+            self::ACTIVATE_USER_SMS => [
+                'rainlab.user::lang.settings.activate_mode_user_sms',
+                'rainlab.user::lang.settings.activate_mode_user_comment_sms'
+            ],            
             self::ACTIVATE_ADMIN => [
                 'rainlab.user::lang.settings.activate_mode_admin',
                 'rainlab.user::lang.settings.activate_mode_admin_comment'

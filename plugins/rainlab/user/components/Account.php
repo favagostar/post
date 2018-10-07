@@ -14,6 +14,9 @@ use ApplicationException;
 use Cms\Classes\Page;
 use Cms\Classes\ComponentBase;
 use RainLab\User\Models\Settings as UserSettings;
+use Charity\Details\Models\Sex;
+use Charity\Details\Models\Location;
+use Charity\Details\Models\CountryCode;
 use Exception;
 
 /**
@@ -65,11 +68,16 @@ class Account extends ComponentBase
      * Executed when this component is initialized
      */
     public function prepareVars()
-    {
-        $this->page['user'] = $this->user();
-        $this->page['canRegister'] = $this->canRegister();
-        $this->page['loginAttribute'] = $this->loginAttribute();
-        $this->page['loginAttributeLabel'] = $this->loginAttributeLabel();
+    {        
+        $this->page['userGroups']  = $this->user()->groups->lists('code');
+        $this->page['user']                 = $this->user();
+        $this->page['canRegister']          = $this->canRegister();
+        $this->page['loginAttribute']       = $this->loginAttribute();
+        $this->page['loginAttributeLabel']  = $this->loginAttributeLabel();
+        $this->page['sex']                  = Sex::orderBy('name')->get();
+        $this->page['locations']            = Location::get();      
+        $this->page['countryCodes']         = CountryCode::orderBy('name', 'ASC')->get(); 
+        $this->page['countryCodeDefault']   = CountryCode::whereIsDefault(1)->first(); 
     }
 
     /**
@@ -158,183 +166,6 @@ class Account extends ComponentBase
     //
 
     /**
-     * Sign in the user
-     */
-    public function onSignin()
-    {
-        try {
-            /*
-             * Validate input
-             */
-            $data = post();
-            $rules = [];
-
-            $rules['login'] = $this->loginAttribute() == UserSettings::LOGIN_USERNAME
-                ? 'required|between:2,255'
-                : 'required|email|between:6,255';
-
-            $rules['password'] = 'required|between:4,255';
-
-            if (!array_key_exists('login', $data)) {
-                $data['login'] = post('username', post('email'));
-            }
-
-            $validation = Validator::make($data, $rules);
-            if ($validation->fails()) {
-                throw new ValidationException($validation);
-            }
-
-            /*
-             * Authenticate user
-             */
-            $credentials = [
-                'login'    => array_get($data, 'login'),
-                'password' => array_get($data, 'password')
-            ];
-
-            Event::fire('rainlab.user.beforeAuthenticate', [$this, $credentials]);
-
-            $user = Auth::authenticate($credentials, true);
-            if ($user->isBanned()) {
-                Auth::logout();
-                throw new AuthException(/*Sorry, this user is currently not activated. Please contact us for further assistance.*/'rainlab.user::lang.account.banned');
-            }
-
-            /*
-             * Redirect
-             */
-            if ($redirect = $this->makeRedirection(true)) {
-                return $redirect;
-            }
-        }
-        catch (Exception $ex) {
-            if (Request::ajax()) throw $ex;
-            else Flash::error($ex->getMessage());
-        }
-    }
-
-    /**
-     * Register the user
-     */
-    public function onRegister()
-    {
-        try {
-            if (!$this->canRegister()) {
-                throw new ApplicationException(Lang::get(/*Registrations are currently disabled.*/'rainlab.user::lang.account.registration_disabled'));
-            }
-
-            /*
-             * Validate input
-             */
-            $data = post();
-
-            if (!array_key_exists('password_confirmation', $data)) {
-                $data['password_confirmation'] = post('password');
-            }
-
-            $rules = [
-                'email'    => 'required|email|between:6,255',
-                'password' => 'required|between:4,255|confirmed'
-            ];
-
-            if ($this->loginAttribute() == UserSettings::LOGIN_USERNAME) {
-                $rules['username'] = 'required|between:2,255';
-            }
-
-            $validation = Validator::make($data, $rules);
-            if ($validation->fails()) {
-                throw new ValidationException($validation);
-            }
-
-            /*
-             * Register user
-             */
-            Event::fire('rainlab.user.beforeRegister', [&$data]);
-
-            $requireActivation = UserSettings::get('require_activation', true);
-            $automaticActivation = UserSettings::get('activate_mode') == UserSettings::ACTIVATE_AUTO;
-            $userActivation = UserSettings::get('activate_mode') == UserSettings::ACTIVATE_USER;
-            $user = Auth::register($data, $automaticActivation);
-
-            Event::fire('rainlab.user.register', [$user, $data]);
-
-            /*
-             * Activation is by the user, send the email
-             */
-            if ($userActivation) {
-                $this->sendActivationEmail($user);
-
-                Flash::success(Lang::get(/*An activation email has been sent to your email address.*/'rainlab.user::lang.account.activation_email_sent'));
-            }
-
-            /*
-             * Automatically activated or not required, log the user in
-             */
-            if ($automaticActivation || !$requireActivation) {
-                Auth::login($user);
-            }
-
-            /*
-             * Redirect to the intended page after successful sign in
-             */
-            if ($redirect = $this->makeRedirection(true)) {
-                return $redirect;
-            }
-        }
-        catch (Exception $ex) {
-            if (Request::ajax()) throw $ex;
-            else Flash::error($ex->getMessage());
-        }
-    }
-
-    /**
-     * Activate the user
-     * @param  string $code Activation code
-     */
-    public function onActivate($code = null)
-    {
-        try {
-            $code = post('code', $code);
-
-            $errorFields = ['code' => Lang::get(/*Invalid activation code supplied.*/'rainlab.user::lang.account.invalid_activation_code')];
-
-            /*
-             * Break up the code parts
-             */
-            $parts = explode('!', $code);
-            if (count($parts) != 2) {
-                throw new ValidationException($errorFields);
-            }
-
-            list($userId, $code) = $parts;
-
-            if (!strlen(trim($userId)) || !strlen(trim($code))) {
-                throw new ValidationException($errorFields);
-            }
-
-            if (!$user = Auth::findUserById($userId)) {
-                throw new ValidationException($errorFields);
-            }
-
-            if (!$user->attemptActivation($code)) {
-                throw new ValidationException($errorFields);
-            }
-
-            Flash::success(Lang::get(/*Successfully activated your account.*/'rainlab.user::lang.account.success_activation'));
-
-            /*
-             * Sign in the user
-             */
-            Auth::login($user);
-
-        }
-        catch (Exception $ex) {
-            if (Request::ajax()) throw $ex;
-            else Flash::error($ex->getMessage());
-        }
-    }
-
-    /**
      * Update the user
      */
     public function onUpdate()
@@ -347,8 +178,23 @@ class Account extends ComponentBase
             $user->avatar = Input::file('avatar');
         }
 
+        if(post('password'))
+        {
+            if(!post('current_password'))
+            {
+                throw new ValidationException(['current_password' => Lang::get('rainlab.user::lang.account.current_password')]);
+            }
+
+            if (!$user->checkHashValue('password', post('current_password'))) {
+                throw new ValidationException(['current_password' => Lang::get('rainlab.user::lang.account.current_password_error')]);
+            }    
+        }
+
         $user->fill(post());
+        $user->isAdmin = true;
         $user->save();
+
+        Flash::success(post('flash', Lang::get(/*Settings successfully saved!*/'rainlab.user::lang.account.success_saved')));
 
         /*
          * Password has changed, reauthenticate the user
@@ -356,8 +202,6 @@ class Account extends ComponentBase
         if (strlen(post('password'))) {
             Auth::login($user->reload(), true);
         }
-
-        Flash::success(post('flash', Lang::get(/*Settings successfully saved!*/'rainlab.user::lang.account.success_saved')));
 
         /*
          * Redirect
@@ -378,8 +222,8 @@ class Account extends ComponentBase
             return;
         }
 
-        if (!$user->checkHashValue('password', post('password'))) {
-            throw new ValidationException(['password' => Lang::get('rainlab.user::lang.account.invalid_deactivation_pass')]);
+        if (!$user->checkHashValue('password', post('deactive_password'))) {
+            throw new ValidationException(['deactive_password' => Lang::get('rainlab.user::lang.account.invalid_deactivation_pass')]);
         }
 
         Auth::logout();

@@ -11,6 +11,7 @@ use Cms\Classes\Page;
 use Cms\Classes\ComponentBase;
 use RainLab\User\Models\UserGroup;
 use ValidationException;
+use ApplicationException;
 
 /**
  * User session
@@ -58,11 +59,23 @@ class Session extends ComponentBase
                 'description' => 'rainlab.user::lang.session.redirect_desc',
                 'type'        => 'dropdown',
                 'default'     => ''
+            ],
+            'redirectNotAllowed' => [
+                'title'       => 'عدم دسترسی انتقال به',
+                'description' => 'در صورت عدم دسترسی به این گروه برو به این صفحه',
+                'type'        => 'dropdown',
+                'default'     => ''
             ]
+
         ];
     }
 
     public function getRedirectOptions()
+    {
+        return [''=>'- none -'] + Page::sortBy('baseFileName')->lists('baseFileName', 'baseFileName');
+    }
+
+    public function getRedirectNotAllowedOptions()
     {
         return [''=>'- none -'] + Page::sortBy('baseFileName')->lists('baseFileName', 'baseFileName');
     }
@@ -78,7 +91,7 @@ class Session extends ComponentBase
     public function init()
     {
         if (Request::ajax() && !$this->checkUserSecurity()) {
-            abort(403, 'Access denied');
+            abort(403, 'شما به این قسمت دسترسی ندارید');
         }
     }
 
@@ -87,11 +100,12 @@ class Session extends ComponentBase
      */
     public function onRun()
     {
-        if (!$this->checkUserSecurity()) {
-            if (empty($this->property('redirect'))) {
-                throw new \InvalidArgumentException('Redirect property is empty');
-            }
-            
+        if($this->checkUserSecurity() == 1)
+        {
+            $redirectUrl = $this->controller->pageUrl($this->property('redirectNotAllowed'));
+            return Redirect::guest($redirectUrl);
+        }
+        else if (!$this->checkUserSecurity()) {
             $redirectUrl = $this->controller->pageUrl($this->property('redirect'));
             return Redirect::guest($redirectUrl);
         }
@@ -176,7 +190,7 @@ class Session extends ComponentBase
      * @return bool
      */
     protected function checkUserSecurity()
-    {
+    {        
         $allowedGroup = $this->property('security', self::ALLOW_ALL);
         $allowedUserGroups = $this->property('allowedUserGroups', []);
         $isAuthenticated = Auth::check();
@@ -189,7 +203,7 @@ class Session extends ComponentBase
             if (!empty($allowedUserGroups)) {
                 $userGroups = Auth::getUser()->groups->lists('code');
                 if (!count(array_intersect($allowedUserGroups, $userGroups))) {
-                    return false;
+                    return 1;
                 }
             }
         }
@@ -199,6 +213,21 @@ class Session extends ComponentBase
             }
         }
 
-        return true;
+        return 2;
     }
+
+    // public function onNotifyRead()
+    // {
+    //     $user = Auth::getUser();
+        
+    //     if($notifications = $user->notifications)
+    //     {
+    //         foreach ($notifications as $key => $notify) {
+    //             $notifications[$key]["read"] = 1;
+    //         }
+
+    //         $user->notifications = $notifications;
+    //         $user->forceSave();            
+    //     }      
+    // }
 }

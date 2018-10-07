@@ -8,6 +8,7 @@ use October\Rain\Auth\Models\User as UserBase;
 use RainLab\User\Models\Settings as UserSettings;
 use October\Rain\Auth\AuthException;
 use Sepehr\Details\Models\Sex;
+use Sepehr\Details\Models\CountryCode;
 
 class User extends UserBase
 {
@@ -24,21 +25,27 @@ class User extends UserBase
      * Validation rules
      */
     public $rules = [
-        'national_code'         => 'required|unique:users',
-        'mobile'                => ['required', 'regex:/^([0]+[9]{1})+[0-9]{9}$/i', 'unique:users'],
+        'first_name'            => 'required',
+        'last_name'             => 'required',    
+        'country_code'          => 'required',    
+        'mobile'                => ['required', 'regex:/^([9]{1})+[0-9]{9}$/i', 'unique:users'],
+        'national_code'         => 'unique:users',
         'email'                 => 'required|between:6,255|email|unique:users',
-        'avatar'                => 'nullable|image|max:4000',
         'username'              => 'required|between:2,255|unique:users',
         'password'              => 'required:create|between:4,255|confirmed',
         'password_confirmation' => 'required_with:password|between:4,255',
+        'avatar'                => 'nullable|image|max:4000',
     ];
 
     public $customMessages = [
+        'first_name.required'       => 'لطفا نام را وارد کنید.',
+        'last_name.required'        => 'لطفا نام خانوادگی را وارد کنید.',
         'national_code.required'    => 'لطفا کد ملی را وارد کنید.',
         'national_code.unique'      => 'کد ملی وارد شده تکراری می باشد.',
         'mobile.required'           => 'لطفا موبایل را وارد کنید.',
         'mobile.unique'             => 'موبایل وارد شده تکراری می باشد.',   
-        'mobile.regex'      => 'فرمت شماره موبایل وارد شده نامعتبر است.',     
+        'mobile.regex'              => 'فرمت شماره موبایل وارد شده نامعتبر است.', 
+        'country_code.required'     => 'لطفا کد کشور را انتخاب کنید.'    
     ];
 
     /**
@@ -222,13 +229,13 @@ class User extends UserBase
      */
     public function beforeValidate()
     {
-        // if($this->national_code)
-        // {
-        //     if(!$this->validationNationalCode($this->national_code))
-        //     {
-        //         throw new \ValidationException(['national_code' => 'فرمت کد ملی وارد شده نامعتبر است.']);        
-        //     }            
-        // }
+        if($this->national_code)
+        {
+            if(!$this->validationNationalCode($this->national_code))
+            {
+                throw new \ValidationException(['national_code' => 'فرمت کد ملی وارد شده نامعتبر است.']);        
+            }            
+        }
 
         /*
          * Guests are special
@@ -461,7 +468,15 @@ class User extends UserBase
     public function getSexIdOptions()
     {
         $lists = Sex::lists('name','id');
-        $lists  = [0 => "انتخاب کنید"] + $lists;
+        $lists  = ['' => "انتخاب کنید"] + $lists;
         return $lists;
     }
+
+    public function getCountryCodeOptions()
+    {
+        $lists = CountryCode::orderBy('name')->lists('name','code');
+        $lists  = ['' => "انتخاب کنید"] + $lists;
+        return $lists;
+    }
+
 }

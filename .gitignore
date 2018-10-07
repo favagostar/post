@@ -12,3 +12,5 @@ index.php
 _ide_helper.php
 /.idea/
 /plugins/rantiz
+/plugins/sepehr/apigenerator
+/plugins/offline/cors

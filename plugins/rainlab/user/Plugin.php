@@ -71,7 +71,10 @@ class Plugin extends PluginBase
         return [
             \RainLab\User\Components\Session::class       => 'session',
             \RainLab\User\Components\Account::class       => 'account',
-            \RainLab\User\Components\ResetPassword::class => 'resetPassword'
+            \RainLab\User\Components\Login::class         => 'login',
+            \RainLab\User\Components\Register::class      => 'register',
+            \RainLab\User\Components\ResetPassword::class => 'resetPassword',
+            \RainLab\User\Components\Activation::class    => 'activation'
         ];
     }
 
@@ -106,7 +109,7 @@ class Plugin extends PluginBase
                 'icon'        => 'icon-user',
                 'iconSvg'     => 'plugins/rainlab/user/assets/images/user-icon.svg',
                 'permissions' => ['rainlab.users.main.*'],
-                'order'       => 500,
+                'order'       => 100,
                 'sideMenu'    => [
                     'users' => [
                         'label'       => 'کاربران',
