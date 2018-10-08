@@ -1,0 +1,110 @@
+description = "users layout"
+
+[session]
+security = "all"
+redirect = "user/login"
+==
+<?php
+use Backend\Models\BrandSetting;
+use Backend\Facades\Backend;
+use System\Models\Parameter;
+
+function onStart()
+{
+   $this['app_name'] = BrandSetting::get('app_name'); 
+
+   if(BrandSetting::getLogo())
+   {
+        $this['logo'] = BrandSetting::getLogo(); 
+   }
+   else
+   {
+        $this['logo'] = Backend::skinAsset('assets/images/frontend-favicon.png');
+   }   
+
+    $coreBuild = Parameter::get('system::core.build', 1);
+    $this["storm_min_css"] = URL::asset('modules/system/assets/ui/storm.css')."?v".$coreBuild;
+    $this["storm_min"] = URL::asset('modules/system/assets/ui/storm-min.js')."?v".$coreBuild;
+    $this["october_min"] = Backend::skinAsset('assets/js/october-min.js')."?v".$coreBuild;
+    $this["lang"] = Url::asset('modules/system/assets/js/lang/lang.'.App::getLocale().'.js')."?v".$coreBuild;
+
+    $this["panel"] = "";
+}
+?>
+==
+<!DOCTYPE html>
+<html lang="fa" class="rtl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="admin-themes-lab">
+    <meta name="author" content="themes-lab">
+    <link rel="shortcut icon" type="image/png" href="{{ logo }}" />
+    <title>{{ app_name }} | {{ this.page.title }}</title>   
+    <link href="{{ 'assets/plugins/fullcalendar/fullcalendar.min.css'|theme }}" rel="stylesheet"> 
+    <!-- <link href="{{ storm_min_css }}" rel="stylesheet"> -->
+    <link href="{{ 'assets/css/style.css'|theme }}" rel="stylesheet">
+    <link href="{{ 'assets/css/theme.css'|theme }}" rel="stylesheet">
+    <link href="{{ 'assets/css/ui.css'|theme }}" rel="stylesheet">
+    <link href="{{ 'assets/css/sweet-alert.css'|theme }}" rel="stylesheet">
+    {% styles %}
+    <script src="{{ 'assets/plugins/modernizr/modernizr-2.6.2-respond-1.1.0.min.js'|theme }}"></script>
+    <script src="{{ 'assets/plugins/jquery/jquery-1.11.1.min.js'|theme }}"></script> 
+  </head>
+  <body class="fixed-topbar fixed-sidebar theme-sdtl color-default sidebar-condensed color-blue theme-sdtd rtl bg-light-default">
+    <!--[if lt IE 7]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <section>
+      <!-- BEGIN SIDEBAR -->
+      <div class="sidebar">
+        {% partial 'user/sidebar' %}
+      </div>
+      <!-- END SIDEBAR -->
+      <div class="main-content">
+        <!-- BEGIN TOPBAR -->
+        <div class="topbar">
+          {% partial 'user/topbar' %}
+        </div>
+        <!-- END TOPBAR -->
+        <!-- BEGIN PAGE CONTENT -->
+        <div class="page-content page-calendar mailbox-send">
+          {% page %}
+          {% partial 'user/footer' %}
+        </div>
+        <!-- END PAGE CONTENT -->
+      </div>
+      <!-- END MAIN CONTENT -->
+    </section>
+    <!-- BEGIN PRELOADER -->
+    <div class="loader-overlay">
+      <div class="spinner">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
+      </div>
+    </div>
+    <!-- END PRELOADER -->
+    <a href="#" class="scrollup"><i class="fa fa-angle-up"></i></a> 
+    {% framework extras %}
+    <script src="{{ storm_min }}"></script>
+    <script src="{{ october_min }}"></script>
+    <script src="{{ lang }}"></script> 
+    <script src="{{ 'assets/plugins/jquery-ui/jquery-ui-1.11.2.min.js'|theme }}"></script>
+    <script src="{{ 'assets/plugins/bootstrap/js/bootstrap.min.js'|theme }}"></script>
+    <script src="{{ 'assets/plugins/mcustom-scrollbar/jquery.mCustomScrollbar.concat.min.js'|theme }}"></script> <!-- Custom Scrollbar sidebar -->
+    <script src="{{ 'assets/plugins/bootstrap-dropdown/bootstrap-hover-dropdown.min.js'|theme }}"></script> <!-- Show Dropdown on Mouseover -->
+    
+    <script src="{{ 'assets/js/application.js'|theme }}"></script> <!-- Main Application Script -->
+    <script src="{{ 'assets/js/plugins.js'|theme }}"></script> <!-- Main Plugin Initialization Script -->
+
+    {% scripts %}
+
+    <!-- Flash Messages -->
+    {% flash %}
+        <p data-control="flash-message" class="flash-message fade {{ type }}" data-interval="5">{{ message }}</p>
+    {% endflash %}
+    <!-- Flash Messages -->
+    
+  </body>
+</html>

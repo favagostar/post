@@ -1,0 +1,15 @@
+==
+{% styles %}
+
+{% page %}
+
+<script src="{{ 'assets/plugins/jquery/jquery-1.11.1.min.js'|theme }}"></script>
+
+{% framework extras %}
+{% scripts %}
+
+<!-- Flash Messages -->
+{% flash %}
+    <p data-control="flash-message" class="flash-message fade {{ type }}" data-interval="5">{{ message }}</p>
+{% endflash %}
+<!-- Flash Messages -->

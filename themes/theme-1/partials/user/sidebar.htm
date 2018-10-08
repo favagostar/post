@@ -1,0 +1,40 @@
+[viewBag]
+==
+<div class="logopanel">
+<!--   <h3 class="text-center" style="margin-top:5px;color:#fff;">
+    پنل فراگیران
+  </h3> -->
+</div>
+<div class="sidebar-inner">
+  <div class="sidebar-top small-img clearfix">
+    <div class="user-image">
+      <img src="{% if user.avatar %}{{ user.avatar.path }}{% else %}{{ 'assets/images/no-user-image.png'|theme }}{% endif %}" class="img-responsive img-circle" alt="user-image" 
+           style="width:55px;height:55px;" >
+    </div>
+    <h4>{% if user.firstName %} {{ user.firstName }} {{ user.lastName }} {% elseif user.username %} {{ user.username }} {% endif %}</h4>
+    <div class="dropdown user-login">
+      <div class="btn btn-xs dropdown-toggle btn-rounded"><i class="online"></i><span>آنلاین</span></div>
+    </div>
+  </div>
+
+  <ul class="nav nav-sidebar">
+    <li class="" id="dashboard">
+      <a href="{{ 'user/dashboard'|page }}">
+        <i class="icon-home"></i>
+        <span>داشبورد</span> 
+      </a>
+    </li>     
+    <li class="nav-parent" id="requirements">
+      <a href="#">
+        <i class="fa fa-archive"></i>
+        <span>بسته های پستی</span> 
+        <span class="fa arrow"></span>
+      </a>
+      <ul class="children collapse">
+        <li id="requirement-new"><a href="{{ 'user/new-box'|page }}">درخواست جدید</a></li>
+        <li id="requirement-list"><a href="{{ 'user/requirements'|page }}">لیست بسته ها</a></li>
+        <li id="requirement-list"><a href="{{ 'user/requirements'|page }}">پیگیری درخواست</a></li>
+      </ul>
+    </li>     
+  </ul>
+</div>
