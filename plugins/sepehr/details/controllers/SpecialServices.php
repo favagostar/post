@@ -19,6 +19,6 @@ class SpecialServices extends Controller
   public function __construct()
   {
     parent::__construct();
-    BackendMenu::setContext('Sepehr.Details', 'details', 'specialServices');
+    BackendMenu::setContext('Sepehr.Details', 'details', 'services');
   }
 }

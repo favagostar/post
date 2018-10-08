@@ -18,6 +18,6 @@ class PostTypes extends Controller
     public function __construct()
     {
         parent::__construct();
-        BackendMenu::setContext('Sepehr.Details', 'details', 'postTypes');
+        BackendMenu::setContext('Sepehr.Details', 'details', 'services');
     }
 }
