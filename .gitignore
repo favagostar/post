@@ -2,7 +2,6 @@
 /config
 /modules
 /storage
-/themes
 /vendor
 .htaccess
 artisan
