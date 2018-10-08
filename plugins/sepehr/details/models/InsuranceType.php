@@ -8,7 +8,7 @@ use Model;
 class InsuranceType extends Model
 {
     use \October\Rain\Database\Traits\Validation;
-    
+
     /*
      * Disable timestamps by default.
      * Remove this line if timestamps are defined in the database table.
@@ -19,6 +19,11 @@ class InsuranceType extends Model
      * @var array Validation rules
      */
     public $rules = [
+        'name' => 'required|max:50'
+    ];
+    public $customMassages = [
+        'name.required' => 'لطفا عنوان را وارد کنید',
+        'name.max' => 'عنوان نباید بیشتر از 50 کاراکتر باشد.'
     ];
 
     /**
