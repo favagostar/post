@@ -19,6 +19,6 @@ class DistributionTimes extends Controller
     {
         parent::__construct();
 
-        BackendMenu::setContext('Sepehr.Details', 'details', 'distributionTimes');
+        BackendMenu::setContext('Sepehr.Details', 'details', 'services');
     }
 }
