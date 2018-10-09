@@ -1,6 +1,7 @@
 <?php namespace Sepehr\Service;
 
 use Backend;
+use Sepehr\Service\Components\PostService;
 use System\Classes\PluginBase;
 
 class Plugin extends PluginBase
@@ -39,7 +40,7 @@ class Plugin extends PluginBase
                 'permissions' => ['sepehr.service.*'],
                 'order' => 300,
                 'sideMenu' => [
-                    'service'=>[
+                    'service' => [
                         'label' => 'سرویس',
                         'url' => Backend::url('sepehr/service/services'),
                         'icon' => 'icon-envelope',
@@ -54,6 +55,9 @@ class Plugin extends PluginBase
 
     public function registerComponents()
     {
+        return [
+            PostService::class => 'postService'
+        ];
     }
 
     public function registerSettings()
