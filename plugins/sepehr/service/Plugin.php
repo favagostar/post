@@ -1,7 +1,7 @@
 <?php namespace Sepehr\Service;
 
 use Backend;
-use Sepehr\Service\Components\PostService;
+use Sepehr\Service\Components\RequestService;
 use System\Classes\PluginBase;
 
 class Plugin extends PluginBase
@@ -56,7 +56,7 @@ class Plugin extends PluginBase
     public function registerComponents()
     {
         return [
-            PostService::class => 'postService'
+            RequestService::class => 'requestService'
         ];
     }
 

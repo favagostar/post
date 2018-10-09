@@ -14,13 +14,13 @@ use Sepehr\Service\Models\Service;
 use RainLab\User\Models\User as FrontendUser;
 use Backend\Models\User as BackendUser;
 
-class PostService extends ComponentBase
+class RequestService extends ComponentBase
 {
     public function componentDetails()
     {
         return [
-            'name' => 'کامپوننت سرویس پست',
-            'description' => 'کاپوننت ثبت سرویس پستی برای مشتری'
+            'name' => 'درخواست سرویس پست',
+            'description' => 'کاپوننت ثبت درخواست سرویس پستی برای مشتری'
         ];
     }
 
