@@ -12,7 +12,6 @@
                 <div class="panel-content">
                     <ul class="nav nav-tabs nav-primary">
                         <li class="active"><a href="#tab2_1" data-toggle="tab">اطلاعات مرسوله</a></li>
-                        <li class=""><a href="#tab2_2" data-toggle="tab">اطلاعات پستچی</a></li>
                     </ul>
                     <div class="tab-content">
                         <div class="tab-pane fade active in" id="tab2_1">
@@ -49,122 +48,152 @@
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                 <h4 class="modal-title">فرم بسته جدید</h4>
             </div>
-            <div class="modal-body">
+            <form>
+                <div class="modal-body">
+                    <div class="col-md-6">
 
-                <div class="col-md-6">
-
-                    <div class="form-group">
-                        <label class="control-label">کدپستی مبدا</label>
-                        <input type="text" class="form-control"
-                               name="sender_postal_code"
-                               id="sender_postal_code">
+                        <div class="form-group">
+                            <label class="control-label">کدپستی مبدا</label>
+                            <input type="text" class="form-control"
+                                   name="sender_postal_code"
+                                   id="sender_postal_code">
+                        </div>
                     </div>
 
-                    <div class="form-group">
-                        <label class="control-label"> آدرس مبدا </label>
-                        <input type="text" class="form-control"
-                               name="sender_address"
-                               id="sender_address">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="control-label"> آدرس مبدا </label>
+                            <input type="text" class="form-control"
+                                   name="sender_address"
+                                   id="sender_address">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="control-label">کدپستی مقصد</label>
+                            <input type="text" class="form-control"
+                                   name="receiver_postal_code"
+                                   id="receiver_postal_code">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="control-label">آدرس مقصد</label>
+                            <input type="text" class="form-control"
+                                   name="receiver_address"
+                                   id="receiver_address">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="control-label">وزن مرسوله</label>
+                            <input type="text" class="form-control"
+                                   name="weight"
+                                   id="weight">
+                        </div>
                     </div>
 
 
-                    <div class="form-group">
-                        <label class="control-label">کدپستی مقصد</label>
-                        <input type="text" class="form-control"
-                               name="receiver_postal_code"
-                               id="receiver_postal_code">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="control-label">وضعیت تراکنش</label>
+                            <input type="text" class="form-control"
+                                   name="transaction_code"
+                                   id="transaction_code">
+                        </div>
                     </div>
 
-                    <div class="form-group">
-                        <label class="control-label">آدرس مقصد</label>
-                        <input type="text" class="form-control"
-                               name="receiver_address"
-                               id="receiver_address">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="control-label">نوع ارسال</label>
+                            <select name="post_type_id" id="post_type_id" class="form-control">
+                                <option value=" ">انتخاب کنید</option>
+                                {% for item in postTypes %}
+                                    <option value="{{ item.id }}">{{ item.name }} </option>
+                                {% endfor %}
+                            </select>
+                        </div>
                     </div>
 
-                    <div class="form-group">
-                        <label class="control-label">وزن مرسوله</label>
-                        <input type="text" class="form-control"
-                               name="weight"
-                               id="weight">
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="package_type_id"> نوع بسته </label>
+                            <select name="package_type_id" id="package_type_id" class="form-control">
+                                <option value=" " >انتخاب کنید</option>
+                                {% for item in packageTypes %}
+                                    <option value="{{ item.id }}"
+                                            class="form-control">{{ item.name }} </option>
+                                {% endfor %}
+                            </select>
+                        </div>
                     </div>
 
-                    <div class="form-group">
-                        <label class="control-label">وضعیت تراکنش</label>
-                        <input type="text" class="form-control"
-                               name="transaction_code"
-                               id="transaction_code">
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="control-label">نوع بیمه</label>
+                            <select name="insurance_type_id" id="insurance_type_id" class="form-control">
+                                <option value=" ">انتخاب کنید</option>
+                                {% for item in insurancesTypes %}
+                                    <option value="{{ item.id }}">{{ item.name }} </option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="control-label">بازه تحویل بسته پستی</label>
+                            <select name="distribution_time_id" id="distribution_time_id" class="form-control">
+                                <option value=" ">انتخاب کنید</option>
+                                {% for item in distributionTimes %}
+                                    <option value="{{ item.id }}">{{ item.name }} </option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="control-label">بازه تحویل بسته پستی</label>
+                            <select name="distribution_time_id" id="distribution_time_id" class="form-control">
+                                <option value=" ">انتخاب کنید</option>
+                                {% for item in distributionTimes %}
+                                    <option value="{{ item.id }}">{{ item.name }} </option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="control-label">خدمات ویژه</label>
+                            <select name="special_services_id" id="special_services_id" class="form-control">
+                                <option value=" ">انتخاب کنید</option>
+                                {% for item in specialServices %}
+                                    <option value="{{ item.id }}">{{ item.name }} </option>
+                                {% endfor %}
+                            </select>
+                        </div>
                     </div>
 
                 </div>
-
-
-                <div class="col-md-6">
-                    <div class="form-group">
-                        <label class="control-label">نوع ارسال</label>
-                        <select name="post_type_id" id="post_type_id" class="form-control">
-                            <option value=" ">انتخاب کنید</option>
-                            {% for item in postTypes %}
-                                <option value="{{ item.id }}">{{ item.name }} </option>
-                            {% endfor %}
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label class="control-label">نوع بسته</label>
-                        <select name="package_type_id" id="package_type_id" class="form-control">
-                            <option value=" ">انتخاب کنید</option>
-                            {% for item in packageTypes %}
-                                <option value="{{ item.id }}">{{ item.name }} </option>
-                            {% endfor %}
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label class="control-label">نوع بیمه</label>
-                        <select name="insurance_type_id" id="insurance_type_id" class="form-control">
-                            <option value=" ">انتخاب کنید</option>
-                            {% for item in insurancesTypes %}
-                                <option value="{{ item.id }}">{{ item.name }} </option>
-                            {% endfor %}
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label class="control-label">بازه تحویل بسته پستی</label>
-                        <select name="distribution_time_id" id="distribution_time_id" class="form-control">
-                            <option value=" ">انتخاب کنید</option>
-                            {% for item in distributionTimes %}
-                                <option value="{{ item.id }}">{{ item.name }} </option>
-                            {% endfor %}
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label class="control-label">خدمات ویژه</label>
-                        <select name="special_services_id" id="special_services_id" class="form-control">
-                            <option value=" ">انتخاب کنید</option>
-                            {% for item in specialServices %}
-                                <option value="{{ item.id }}">{{ item.name }} </option>
-                            {% endfor %}
-                        </select>
-                    </div>
-
-
+                <div class="clearfix"></div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-success btn-embossed save-event m-r-0"
+                            data-request="onCreatePackage"
+                            data-request-update="'{{ __SELF__ }}::_packages':'.showPackages'"
+                            data-request-success="$('#package-modal').modal('hide');"
+                            data-request-flash>ایجاد
+                    </button>
+                    <button type="button" class="btn btn-default btn-embossed" data-dismiss="modal">بستن</button>
                 </div>
-            </div>
-
-
-            <div class="clearfix"></div>
-            <div class="modal-footer">
-                <button type="submit" class="btn btn-success btn-embossed save-event m-r-0"
-                        data-request="onRegisterPartners"
-                        data-request-update="'{{ __SELF__ }}::_usersPartnership':'.showPartnership'"
-                        data-request-success="$('#partners-modal').modal('hide');"
-                        data-request-flash>ایجاد
-                </button>
-                <button type="button" class="btn btn-default btn-embossed" data-dismiss="modal">بستن</button>
-            </div>
+            </form>
         </div>
     </div>
 </div>

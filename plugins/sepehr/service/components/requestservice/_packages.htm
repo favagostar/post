@@ -1,34 +1,28 @@
 {% if packages %}
   <table class="table table-hover dataTable" id="table2">
     <thead>
-      <tr>
-        <th>#</th>
-        <th>همکار</th>
-        <th>نوع همکاری</th>
-        <th>عملیات</th>
-      </tr>
+    <tr>
+      <th>#</th>
+      <th>کد پستی</th>
+      <th>نوع ارسال</th>
+      <th>نوع بسته</th>
+      <th>وزن</th>
+      <th>عملیات</th>
+    </tr>
     </thead>
     <tbody>
-      {% set cnt = 1 %}
-      {% for key,item in partnerships %}
-        <tr>
-          <td>{{cnt}}</td>
-          <td>{{model.getUser(item.partner_id)}}</td>
-          <td>{{model.getPartnershipType(item.partnership_type)}}</td>
-          <td>
-              {% if research.status == 1 or not research.status %}
-                <a md-ink-ripple="#8C8C8C" href="#" class="" style="font-size:20px" 
-                   data-request="onDeletePartnership"
-                   data-request-confirm="آیا برای حذف مطمئن هستید؟"
-                   data-request-update="'{{__SELF__ }}::_usersPartnership':'.showPartnership'"
-                   data-request-data="id:{{key}}">
-                   <i style="float:none;" class="fa fa-trash" rel="popover" data-container="body" data-toggle="popover" data-placement="top" data-content="برای حذف همکار اینجا را کلیک کنید" data-original-title="حذف"></i>
-                </a>
-              {% endif %}  
-          </td>
-        </tr>
-        {% set cnt = cnt + 1 %}
-      {% endfor %}
+    {% set cnt = 1 %}
+    {% for item in packages %}
+      <tr>
+        <td>{{ cnt }}</td>
+        <td>{{ item.sender_postal_code }}</td>
+        <td>{{ service.getPostType(item.post_type_id) }}</td>
+        <td>{{ service.getPackageType(item.package_type_id) }}</td>
+        <td>{{ item.weight }}</td>
+        <td></td>
+      </tr>
+      {% set cnt = cnt + 1 %}
+    {% endfor %}
     </tbody>
   </table>
 {% endif %}
