@@ -1,7 +1,3 @@
-{{ packages|json_encode|raw }}
-
-
-
 {{ form_ajax('onSaveService',{model:lists,class: 'form-horizontal', 'data-request-flash': true}) }}
 <div class="col-md-12">
     <div class="row">
@@ -21,7 +17,7 @@
                             <input type="text" class="form-control"
                                    name="sender_postal_code"
                                    id="sender_postal_code"
-                                   value="{{ id ? form_value('sender_postal_code'): address.address }}"
+                                   value="{{ form_value('sender_postal_code') }}"
                             >
                         </div>
                     </div>
@@ -32,7 +28,7 @@
                             <input type="text" class="form-control"
                                    name="sender_address"
                                    id="sender_address"
-                                   value="{{ id ? form_value('sender_address'): address.postal_code }}"
+                                   value="{{ form_value('sender_address') }}"
                             >
                         </div>
                     </div>
@@ -47,17 +43,17 @@
                         </div>
                     </div>
 
-                    <div class="col-md-12">
-                        <div class="form-group">
-                            <label for="status_id" class="control-label">وضعیت سرویس</label>
-                            <select disabled name="status_id" id="status_id" class="form-control">
-                                <option value="0">نامشخص</option>
-                                {% for item in statuses %}
-                                    <option value="{{ item.id }}">{{ item.name }} </option>
-                                {% endfor %}
-                            </select>
-                        </div>
-                    </div>
+                    {#<div class="col-md-12">#}
+                        {#<div class="form-group">#}
+                            {#<label for="status_id" class="control-label">وضعیت سرویس</label>#}
+                            {#<select disabled name="status_id" id="status_id" class="form-control">#}
+                                {#<option value="0">نامشخص</option>#}
+                                {#{% for item in statuses %}#}
+                                    {#<option value="{{ item.id }}">{{ item.name }} </option>#}
+                                {#{% endfor %}#}
+                            {#</select>#}
+                        {#</div>#}
+                    {#</div>#}
 
                     <ul class="nav nav-tabs nav-primary">
                         <li class="active"><a href="#tab2_1" data-toggle="tab">اطلاعات مرسوله</a></li>
@@ -66,11 +62,11 @@
                         <div class="tab-pane fade active in" id="tab2_1">
                             <div class="row column-seperation">
                                 <div class="col-md-12">
-                                    <a href="#" data-toggle="modal" data-target="#package-modal"
-                                       id="btn-newPack"
-                                       data-request-success="dataRequestUpdate()"
-                                       class="btn btn-success btn-embossed btnCreatePackage" style="width:150px;">بسته
-                                        جدید</a>
+                                    {#<a href="#" data-toggle="modal" data-target="#package-modal"#}
+                                       {#id="btn-newPack"#}
+                                       {#data-request-success="dataRequestUpdate()"#}
+                                       {#class="btn btn-success btn-embossed btnCreatePackage" style="width:150px;">بسته#}
+                                        {#جدید</a>#}
                                     <div class="showPackages">
                                         {% partial __SELF__ ~ '::_packages' %}
                                     </div>
@@ -79,13 +75,14 @@
                         </div>
                     </div>
                     <div class="row column-seperation">
-                        <div class="col-md-12" style="text-align:left;">
+                       <div class="col-md-12" style="text-align:left;">
                             <button name="btn_package"
                                     type="submit"
                                     class="btn btn-primary btn-embossed"
                                     style="width:150px;"
-                                    data-request="onSaveService"
-                            >ثبت
+                                    data-request-confirm="آیا پرداخت هزینه توسط مشتری مورد تایید است؟"
+                                    data-request="onDeliveredService"
+                            >تایید
                             </button>
                         </div>
                     </div>
@@ -108,7 +105,6 @@
                 <input type="hidden" name="package_id">
                 <div class="modal-body">
 
-
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="receiver_postal_code" class="control-label">کدپستی مقصد</label>
@@ -128,25 +124,10 @@
 
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label for="package_number" class="control-label"> تعداد بسته پستی </label>
-                            <input type="number" class="form-control"
-                                   name="package_number"
-                                   id="package_number"
-                                   min="1"
-                                   value="{{ id ? form_value('package_number'):1 }}"
-                            >
-                        </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="weight_id" class="control-label">وزن مرسوله</label>
-                            <select name="weight_id" id="weight_id" class="form-control">
-                                <option value=" ">انتخاب کنید</option>
-                                {% for item in weight %}
-                                    <option value="{{ item.id }}">{{ item.name }} </option>
-                                {% endfor %}
-                            </select>
+                            <label for="weight" class="control-label">وزن مرسوله</label>
+                            <input type="text" class="form-control"
+                                   name="weight"
+                                   id="weight">
                         </div>
                     </div>
 
@@ -221,13 +202,13 @@
                     <button type="submit" id="btn-save" class="btn btn-success btn-embossed save-event m-r-0"
                             data-request="onCreatePackage"
                             data-request-update="'{{ __SELF__ }}::_packages':'.showPackages'"
-                            data-request-success="$('#package-modal').modal('hide');"
+                            data-request-success="dataRequestUpdate()"
                             data-request-flash>ایجاد
                     </button>
                     <button type="submit" id="btn-edit" class="btn btn-default btn-embossed save-event m-r-0 hide"
                             data-request="onUpdatePackage"
                             data-request-update="'{{ __SELF__ }}::_packages':'.showPackages'"
-                            data-request-success="$('#package-modal').modal('hide');"
+                            data-request-success="dataRequestUpdate()"
                             data-request-flash>ذخیره
                     </button>
                     <button type="button" class="btn btn-default btn-embossed btnClose"
@@ -243,9 +224,23 @@
 <!-- END MODAL -->
 
 <script>
+    const dataRequestUpdate = function () {
+        $('#package-modal').modal('hide');
+
+    };
+
+
+    document.getElementById('lblPrice').innerHTML = {{ price }};
 
     $(document).ready(function () {
+        $("#btn-newPack").click(function () {
+            $('#my-form')[0].reset();
+            $('span.select2-selection__rendered').text('انتخاب کنید');
+            $('#package-modal').find('.modal-title').text('فرم ایجاد بسته جدید');
+            $('#package-modal').find('#btn-edit').addClass('hide');
+            $('#package-modal').find('#btn-save').removeClass('hide');
 
+        });
     });
 
 
