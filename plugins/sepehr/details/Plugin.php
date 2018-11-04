@@ -63,12 +63,26 @@ class Plugin extends PluginBase
                 "label" => 'مدیریت انواع زمان توزیع',
                 "order" => 4
             ],
+            "sepehr.details.service.access_status" => [
+                "tab" => 'اطلاعات پایه سرویس پست',
+                "label" => 'مدیریت انواع وضعیت ها',
+                "order" => 5
+            ],
             "sepehr.details.service.access_insurance_types" => [
                 "tab" => 'اطلاعات پایه سرویس پست',
                 "label" => 'مدیریت انواع بیمه',
-                "order" => 5
+                "order" => 6
             ],
-
+            "sepehr.details.service.access_acceptance" => [
+                "tab" => 'اطلاعات پایه سرویس پست',
+                "label" => 'مدیریت انواع پذیرش',
+                "order" => 7
+            ],
+            "sepehr.details.service.access_weight" => [
+                "tab" => 'اطلاعات پایه سرویس پست',
+                "label" => 'مدیریت انواع وزن ',
+                "order" => 8
+            ],
         ];
     }
 
