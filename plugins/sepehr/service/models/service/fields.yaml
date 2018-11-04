@@ -1,19 +1,16 @@
 fields:
-    user_id:
-        label: کاربر
+    sender_postal_code:
+        label: 'کد پستی مبدا'
+        span: auto
+        type: text
+    sender_address:
+        label: 'آدرس مبدا'
+        span: auto
+        type: text
+    status_id:
+        label: 'وضعیت تراکنش'
         span: auto
         type: dropdown
-        tab: 'اطلاعات اولیه'
-    operator_id:
-        label: اپراتور
-        span: auto
-        type: dropdown
-        tab: 'اطلاعات اولیه'
-    payment_type_id:
-        label: 'نوع پرداخت'
-        span: auto
-        type: dropdown
-        tab: 'اطلاعات اولیه'
 tabs:
     fields:
         packages:
@@ -24,14 +21,6 @@ tabs:
             tab: مرسوله
             form:
                 fields:
-                    sender_postal_code:
-                        label: 'کد پستی مبدا'
-                        span: auto
-                        type: text
-                    sender_address:
-                        label: 'آدرس مبدا'
-                        span: auto
-                        type: text
                     receiver_postal_code:
                         label: 'کد پستی مقصد'
                         span: auto
@@ -40,6 +29,10 @@ tabs:
                         label: 'آدرس مقصد'
                         span: auto
                         type: text
+                    weight_id:
+                        label: وزن
+                        span: auto
+                        type: dropdown
                     post_type_id:
                         label: 'نحوه ارسال'
                         span: auto
@@ -48,10 +41,6 @@ tabs:
                         label: 'بازه تحویل بسته پستی'
                         span: auto
                         type: dropdown
-                    weight:
-                        label: 'وزن مرسوله'
-                        span: auto
-                        type: number
                     special_services_id:
                         label: 'خدمات ویژه'
                         span: auto
@@ -68,10 +57,6 @@ tabs:
                         label: 'نوع بیمه'
                         span: auto
                         type: dropdown
-                    transaction_code:
-                        label: 'وضعیت تراکنش'
-                        span: auto
-                        type: text
                     points:
                         label: 'نقاط GPS'
                         span: auto
@@ -79,6 +64,19 @@ tabs:
                         context:
                             - preview
                         type: text
+                    transaction_code:
+                        label: 'کد پیگیری'
+                        span: auto
+                        type: text
+                    package_number:
+                        label: 'تعداد بسته'
+                        span: auto
+                        type: number
+                    is_rejected:
+                        label: 'قبول شده'
+                        span: auto
+                        default: 0
+                        type: switch
         postmans:
             label: پستچی
             prompt: 'Add new item'
@@ -91,12 +89,12 @@ tabs:
                         label: پستچی
                         span: auto
                         type: dropdown
-                    acceptance:
-                        label: پذیرش
-                        span: full
-                        type: checkbox
+                    acceptance_id:
+                        label: 'وضعیت پذیرش'
+                        span: auto
+                        type: dropdown
                     accepted_at:
-                        label: 'تاریخ پذیرش'
+                        label: 'تاریخ پذیرش یا رد'
                         mode: datetime
                         span: auto
                         type: datepicker
