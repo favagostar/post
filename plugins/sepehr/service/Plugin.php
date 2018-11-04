@@ -1,7 +1,13 @@
 <?php namespace Sepehr\Service;
 
 use Backend;
+use Sepehr\Service\Components\PostmanServices;
+use Sepehr\Service\Components\ReferralPostman;
 use Sepehr\Service\Components\RequestService;
+use Sepehr\Service\Components\ServiceDelivery;
+use Sepehr\Service\Components\ServiceList;
+use Sepehr\Service\Components\Wallet;
+use Sepehr\Service\FormWidgets\Postman;
 use System\Classes\PluginBase;
 
 class Plugin extends PluginBase
@@ -56,11 +62,25 @@ class Plugin extends PluginBase
     public function registerComponents()
     {
         return [
-            RequestService::class => 'requestService'
+            RequestService::class => 'requestService',
+            ServiceList::class => 'serviceList',
+            ReferralPostman::class => 'referralPostman',
+            PostmanServices::class => 'PostmanServices',
+            ServiceDelivery::class => 'ServiceDelivery',
+            Wallet::class => 'walletComponent'
         ];
     }
 
     public function registerSettings()
     {
     }
+
+    public function registerFormWidgets()
+    {
+        return
+            [
+         
+            ];
+    }
+
 }
