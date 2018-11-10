@@ -6,10 +6,25 @@ is_hidden = 0
 [requestService]
 id = "{{:id}}"
 ==
-{% component 'requestService' %}
-
 {% put scripts %}
     <script src="{{ storm_min }}"></script>
     <script src="{{ october_min }}"></script>
     <script src="{{ lang }}"></script> 
 {% endput %}
+
+<!-- Breadcrumbs -->
+<div class="header">
+  <h2><strong>درخواست جدید</strong></h2>
+   <div class="breadcrumb-wrapper">
+    <ol class="breadcrumb">
+      <li><a href="{{ 'user/dashboard'|page }}">داشبورد</a></li>
+      <li><a href="{{ 'user/dashboard'|page }}">لیست درخواست ها</a></li>      
+      <li class="active">درخواست جدید</li>      
+    </ol>
+  </div>
+</div>
+<!-- end Breadcrumbs -->
+
+<div class="row">
+  {% component 'requestService' %}
+</div>
