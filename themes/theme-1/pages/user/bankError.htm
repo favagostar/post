@@ -1,0 +1,22 @@
+title = "خطا در پرداخت"
+url = "/bankError"
+layout = "Users"
+is_hidden = 0
+==
+<!-- Breadcrumbs -->
+<div class="header">
+  <h2><strong>خطا در پرداخت</strong></h2>
+  <div class="breadcrumb-wrapper">
+    <ol class="breadcrumb">
+      <li><a href="{{ 'user/dashboard'|page }}">داشبورد</a></li>
+      <li class="active">خطا در پرداخت</li>      
+    </ol>
+  </div>
+</div>
+<!-- end Breadcrumbs -->
+
+<div class="row">
+	{% if errors.all()[0] == 1 %}
+	    <h4 style="color:red;text-align:center;">{{errors.all()[1]}}</h4>
+	{% endif %}
+</div>
