@@ -1,12 +1,12 @@
-title = "درخواست بسته جدید"
-url = "/request-package"
+title = "تحویل گرفتن بسته"
+url = "/service-delivery/:id"
 layout = "Users"
 is_hidden = 0
 
-[requestService]
+[ServiceDelivery]
 id = "{{:id}}"
 ==
-{% component 'requestService' %}
+{% component 'ServiceDelivery' %}
 
 {% put scripts %}
     <script src="{{ storm_min }}"></script>
