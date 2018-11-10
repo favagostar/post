@@ -35,7 +35,7 @@ class Wallet extends ComponentBase
 
     public function onRun()
     {
-        $this->preVars();
+        // $this->preVars();
     }
 
     public function onWalletCharge()
@@ -59,6 +59,14 @@ class Wallet extends ComponentBase
     public function MinusWallet($amount)
     {
 
+    }
+
+    public function onGateway()
+    {
+        $price = post('price');
+        // throw new \ApplicationException($price);
+        
+        return Redirect::to(url('gateway'))->with(['price' => $price]);
     }
 
 }
