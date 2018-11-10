@@ -1,6 +1,15 @@
 <?php namespace Sepehr\Service\Components;
 
 use Cms\Classes\ComponentBase;
+use Redirect;
+use Sepehr\Details\Models\DistributionTime;
+use Sepehr\Details\Models\InsuranceType;
+use Sepehr\Details\Models\PackageType;
+use Sepehr\Details\Models\PaymentType;
+use Sepehr\Details\Models\PostType;
+use Sepehr\Details\Models\SpecialService;
+use Sepehr\Details\Models\Status;
+use Sepehr\Details\Models\Weight;
 use Sepehr\Service\Models\Service;
 use Session;
 use Auth;
@@ -44,6 +53,15 @@ class ServiceDelivery extends ComponentBase
         $this->page['price'] = $this->calculatePrice($list->packages);
         $this->page['packages'] = $list->packages;
         $this->page['service'] = new Service();
+        $this->page['paymentTypes'] = PaymentType::orderBy('name')->get();
+        $this->page['postTypes'] = PostType::orderbY('name')->get();
+        $this->page['insurancesTypes'] = InsuranceType::orderBy('name')->get();
+        $this->page['distributionTimes'] = DistributionTime::orderBy('name')->get();
+        $this->page['specialServices'] = SpecialService::orderBy('name')->get();
+        $this->page['packageTypes'] = PackageType::orderBy('name')->get();
+        $this->page['statuses'] = Status::orderBy('id')->get();
+        $this->page['weight'] = Weight::orderBy('id')->get();
+        $this->page['payments']=$list->payments;
     }
 
     public function onRun()
@@ -55,14 +73,28 @@ class ServiceDelivery extends ComponentBase
     {
         $price = 0;
         foreach ($packages as $package) {
-            if ($package['is_rejected'] == false) {
+            if ($package['is_rejected'] == false && $package['price']!=null) {
                 $price += $package['price'];
             }
         }
         return $price;
     }
 
+    public function onCashPayment()
+    {
+        $id = $this->property('id');
+        $service=Service::find($id);
+        $payments=$service->payments;
+        $payments[]=['payment_type_id'=>2, 'amount' => post('cashPayment'),'payment_date' => ''];
+        $service->payments=$payments;
 
+        //در صورتی که کامل پرداخت شده وضعیت پرداخت تنظیم شود
+
+        $service->save();
+        $this->page['service']=new Service();
+        $this->page['payments']=$service->payments;
+
+    }
     public function onPackageReject()
     {
         $id = post('id');
@@ -72,6 +104,15 @@ class ServiceDelivery extends ComponentBase
         $this->page['packages'] = $packages;
         $this->page['price'] = $this->calculatePrice($packages);
         $this->page['service'] = new Service();
+    }
+
+    public function onDeliveredService()
+    {
+        $id = $this->property('id');
+        $service=Service::find($id);
+        $service->status_id=4;
+        $service->save();
+        return Redirect::to('/postman-services');
     }
 
 }
