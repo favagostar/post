@@ -1,7 +1,4 @@
 
-
-
-
 {{ form_ajax('onSaveService',{model:lists,class: 'form-horizontal', 'data-request-flash': true}) }}
 <div class="col-md-12">
     <div class="row">
@@ -133,7 +130,7 @@
                                    name="package_number"
                                    id="package_number"
                                    min="1"
-                                   value="{{ id ? form_value('package_number'):1 }}"
+                                   value="{{ id ? item.package_number :1 }}"
                             >
                         </div>
                     </div>
@@ -222,14 +219,9 @@
                             data-request="onCreatePackage"
                             data-request-update="'{{ __SELF__ }}::_packages':'.showPackages'"
                             data-request-success="$('#package-modal').modal('hide');"
-                            data-request-flash>ایجاد
-                    </button>
-                    <button type="submit" id="btn-edit" class="btn btn-default btn-embossed save-event m-r-0 hide"
-                            data-request="onUpdatePackage"
-                            data-request-update="'{{ __SELF__ }}::_packages':'.showPackages'"
-                            data-request-success="$('#package-modal').modal('hide');"
                             data-request-flash>ذخیره
                     </button>
+
                     <button type="button" class="btn btn-default btn-embossed btnClose"
 
                             data-dismiss="modal"
