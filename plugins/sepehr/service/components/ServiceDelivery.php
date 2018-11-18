@@ -1,5 +1,7 @@
 <?php namespace Sepehr\Service\Components;
 
+use Flash;
+
 use Cms\Classes\ComponentBase;
 use Redirect;
 use Sepehr\Details\Models\DistributionTime;
@@ -13,6 +15,7 @@ use Sepehr\Details\Models\Weight;
 use Sepehr\Service\Models\Service;
 use Session;
 use Auth;
+use Sepehr\Wallet\Components\Wallet;
 
 class ServiceDelivery extends ComponentBase
 {
@@ -90,7 +93,7 @@ class ServiceDelivery extends ComponentBase
 
         //در صورتی که کامل پرداخت شده وضعیت پرداخت تنظیم شود
 
-        $service->save();
+        $service->forceSave();
         $this->page['service']=new Service();
         $this->page['payments']=$service->payments;
 
@@ -112,7 +115,13 @@ class ServiceDelivery extends ComponentBase
         $service=Service::find($id);
         $service->status_id=4;
         $service->save();
+        $wallet=new Wallet();
+        if($wallet->PayService($service)){
+            Flash::success('پرداخت با موفقیت انجام شد');
+        }
         return Redirect::to('/postman-services');
     }
+
+
 
 }
