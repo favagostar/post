@@ -10,7 +10,11 @@ use Sepehr\Details\Models\Sex;
  */
 class Reports extends Controller
 {
+    public $implement = ['Backend\Behaviors\ListController'];
+
     public $requiredPermissions = ['rainlab.users.main.access_reports'];
+
+    public $listConfig = 'config_list.yaml';
 
     public function __construct()
     {
@@ -26,6 +30,8 @@ class Reports extends Controller
         $this->addJs('/plugins/sepehr/service/assets/js/tag-it.js');  
 
         $this->vars['sex'] = Sex::orderBy('name')->get();
+
+        return $this->asExtension('ListController')->index();
     }
 
     public function onReports()
