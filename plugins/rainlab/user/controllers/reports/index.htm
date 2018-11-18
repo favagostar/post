@@ -1,0 +1,128 @@
+<div class="layout-row">
+	<div class="padded-container layout">
+		<div class="layout-row min-size">
+			<div data-control="formwidget" data-refresh-handler="form::onRefresh" class="layout-row" role="form" id="Form-outsideContainer" data-disposable="">
+				<!-- Outside Tabs -->
+				<div class="layout-row min-size">
+					<div id="Form-outsideTabs" class="form-tabless-fields ">
+					</div>
+				</div>
+			</div>        
+		</div>
+		<div class="layout-row">
+			<div data-control="formwidget" data-refresh-handler="form::onRefresh" class="layout-row" role="form" id="Form-primaryContainer" data-disposable="">
+				<!-- Primary Tabs -->
+				<form class="layout-row min-size">
+					<div id="Form-primaryTabs" class="control-tabs primary-tabs layout has-tabs" data-control="tab" data-slidable="">
+						<div class="">
+							<ul class="nav nav-tabs" data-disposable="">
+								<li class="active">
+									<a href="#primarytab-1" data-target="#tabs1915-tab-01542552602495" data-toggle="tab" title="اطلاعات عمومی">
+										<span class="title"><span>اطلاعات عمومی</span></span>
+									</a>
+									<span class="tab-close"><i>×</i></span>
+								</li>
+							</ul>
+						</div>
+						<div class="tab-content ">
+							<div class="tab-pane  active " id="tabs1915-tab-01542552602495">
+								<div class="form-group  text-field span-left   " data-field-name="first_name" id="Form-field-User-first_name-group">
+									<label for="Form-field-User-first_name">نام</label>
+									<!-- Text -->
+									<input type="text" name="first_name" id="Form-field-User-first_name" value="" placeholder="" class="form-control" autocomplete="off" maxlength="255">
+								</div>    
+								<div class="form-group  text-field span-right   " data-field-name="last_name" id="Form-field-User-last_name-group">
+									<label for="Form-field-User-last_name">نام خانوادگی</label>
+									<!-- Text -->
+									<input type="text" name="last_name" id="Form-field-User-last_name" value="" placeholder="" class="form-control" autocomplete="off" maxlength="255">
+								</div>   
+								<div class="form-group  text-field span-right   " data-field-name="mobile" id="Form-field-User-mobile-group">
+									<label for="Form-field-User-mobile">موبایل</label>
+									<!-- Text -->
+									<input type="text" name="User[mobile]" id="Form-field-User-mobile" value="" placeholder="" class="form-control" autocomplete="off" maxlength="255">
+								</div>    
+								<div class="form-group  text-field span-left   " data-field-name="national_code" id="Form-field-User-national_code-group">
+									<label for="Form-field-User-national_code">کد ملی</label>
+									<!-- Text -->
+									<input type="text" name="User[national_code]" id="Form-field-User-national_code" value="" placeholder="" class="form-control" autocomplete="off" maxlength="255">
+								</div>    
+                                <div class="form-group  dropdown-field span-left" data-field-name="sex_id" id="sex_id-group">
+                                    <label for="sex_id">جنسیت</label>
+                                    <!-- Dropdown -->
+                                    <select id="sex_id" class="form-control custom-select  select2-hidden-accessible tagit-select" data-disposable="data-disposable" tabindex="-1" aria-hidden="true">
+                                        <option value=" ">انتخاب کنید</option>
+                                        <?php foreach($sex as $item):?>
+                                            <option value="<?=$item->id?>"><?=$item->name?></option>
+                                        <?php endforeach;?>
+                                    </select>
+                                </div>    
+                                <div class="form-group  widget-field text-left span-right" style="padding-bottom: 0;">
+                                    <label>جنسیت های انتخاب شده</label>
+                                    <ul class="ul-tags" style="height: 38px;"></ul>
+                                </div>
+
+							</div>
+						</div>        
+					</div>
+					<div class="form-buttons">
+						<div class="loading-indicator-container">
+							<button type="submit" 
+								data-request="onReports" 
+								data-load-indicator="درحال جستجو..."
+								data-request-update="'result':'.showResult'"
+								data-request-flash 
+								class="btn btn-primary">
+								جستجو                
+							</button>
+						</div>
+					</div>   
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="layout-row">    
+    <div class="padded-container layout form-tabless-fields showResult"></div>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $(".ul-tags").tagit();
+        $(".tagit-new").remove();
+
+        $(".tagit-select").change(function(){
+            fieldID = $(this).attr("id");
+            tagID = $(this).val();
+            tagName = $("option:selected", this).html();
+
+            count = tagName.length;
+            name = '';
+            for(i=0;i<count;i++)
+            {
+                if(tagName[i] == ' ' && tagName[i+1] == '-')
+                {
+                    break;
+                }
+                else
+                {
+                    name += tagName[i]; 
+                }
+            }
+
+            if(tagID >= 0)
+            {
+                $(this).parent().next().find(".ul-tags").prepend('<li class="tagit-choice ui-widget-content ui-state-default ui-corner-all tagit-choice-editable"><span class="tagit-label">'+tagName+'</span><a class="tagit-close"><span class="text-icon">×</span><span class="ui-icon ui-icon-close"></span></a><input type="hidden" '+
+                    'value="'+tagID+'" name="'+fieldID+'[]" class="tagit-hidden-field"></li>');
+
+                $(".tagit-close").click(function(){
+                    tagID = $(this).next().val();
+                    tagName = $(this).prev().text();
+                    $(this).parent().parent().parent().prev().find(".tagit-select").append("<option value='"+tagID+"'>"+tagName+"</option>");
+                    $(this).parent().remove();
+                });
+                $("#select2-"+fieldID+"-container").html("انتخاب کنید");
+                $("option:selected", this).remove();
+            }           
+        });
+    });
+</script>
