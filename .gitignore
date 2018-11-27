@@ -3,7 +3,6 @@
 /modules
 /storage
 /vendor
-.htaccess
 artisan
 index.php
 /plugins/flynsarmy
