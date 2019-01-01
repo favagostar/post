@@ -1,9 +1,0 @@
-fields:
-    name:
-        label: عنوان
-        span: auto
-        type: text
-    coefficient:
-        label: ضریب
-        span: auto
-        type: number
